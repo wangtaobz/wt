@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>项目四 保障网络安全</title>
+    <link rel="stylesheet" href="./jquery/jquery.mobile-1.0.min.css" />
+    <script type="text/javascript" src="./jquery/jquery-1.6.4.min.js">
+    </script>
+    <script type="text/javascript" src="./jquery/jquery.mobile-1.0.min.js">
+    </script>
+    <style type="text/css">
+      form{
+        font-family:"宋体";
+        font-size:18px;
+        line-height:26px;
+      }
+    </style>
+    <script type="text/javascript" src="js/new-ljgkytzt.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/ljgkt.js" charset="utf-8"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  </head>
+  
+  <body>
+    <div data-role="page" id="home">
+      <div data-role="header" data-theme="b">
+        <h1>项目四 保障网络安全</h1>
+      </div>
+      
+      <div data-role="content">
+        <div data-role="collapsible-set">
+          <div data-role="collapsible">
+            <h1>任务1 认识加密与认证技术</h1>
+            <p>
+              <div data-role="collapsible-set">
+                <div data-role="collapsible">
+                  <h1>数据加密</h1>
+                  <p>
+                  <div>
+                    <table border="1" cellspacing="0" width="100%">
+                      <tr><th colspan="2">加密算法</th><th>解释</th><th>代表</th></tr>
+                      <tr><td rowspan="2">对称加密算法</td><td>序列算法</td><td>将明文中的每个字母用后n个字母来替换变成密文</td><td>凯撒密码</td></tr>
+                      <tr><td>分组算法</td><td>把明文分割成块结构，逐块予以加密和解密</td><td>AES、DES、3DES</td></tr>
+                      <tr><td rowspan="2">非对称加密算法</td><td>公开密钥</td><td>用对应的私有密钥才能解密</td><td rowspan="2">RSA、PGP</td></tr>
+                      <tr><td>私有密钥</td><td>用对应的公开密钥才能解密</td></tr>
+                      <tr><td colspan="2">单向散列算法（哈希算法）</td><td>对数据进行运算，得到固定长度的报文摘要</td><td>Hash</td></tr>
+                    </table>
+                  </div>
+                  </p>
+                </div>
+          
+                <div data-role="collapsible">
+                  <h1>加密技术</h1>
+                  <p>
+                    <div>
+                      加密技术是解决网络信息安全问题的技术核心，任何一个加密系统至少包括下面四个组成部分：
+                      <ol>
+                        <li>未加密的报文，也称明文</li>
+                        <li>加密后的报文，也称密文</li>
+                        <li>加密解密设备或算法</li>
+                        <li>加密解密的密钥</li>
+                      </ol>
+                    </div>
+                  </p>
+                </div>
+            
+                <div data-role="collapsible">
+                  <h1>认证技术</h1>
+                  <p>是指核实真实身份的过程，是防止主动攻击的重要技术
+                    <div>
+                      <ol>
+                        <li><b>消息认证</b>——是一个过程，使得通信的接收方能够难所收到的报文在传输过程中是否被假冒、伪造和篡改，即保证信息的完整性和有效性
+                        <ul>
+                          <li>使用MAC（消息认证码）的消息认证，如基于DES的消息认证，收发双方共享相同的密钥
+                          <li>使用HASH（哈希）算法的消息认证，如MD5（MD——消息摘要）；SHA-1（安全哈希算法）
+                        </ul>
+                        <li><b>数字签名</b>——利用加密技术，根据某种协议产生一个反映被签署文件的特征和签署人的特征，以保证文件的真实性和有效性。数字签名普遍应用于银行、电子商务等领域
+                        <ul>
+                          <li>基于公钥的数字签名
+                          <li>使用消息摘要的数字签名
+                          <li>基于私钥的数字签名
+                        </ul>
+                        <li><b>身份认证</b>——指计算机及网络系统确认操作者身份的过程所应用的技术手段
+                        <ul>
+                          <li>密码认证
+                          <li>IC卡认证
+                          <li>个人特征认证
+                        </ul>
+                      </ol>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>密码发展历史阶段</h1>
+                  <p>
+                    <div>
+                      <ol>
+                        <li>第一阶段：<b>原始密码</b>阶段
+                        <li>第二阶段：本世纪20年代以前的<b>古典密码</b>阶段
+                        <li>第三阶段：随着电报、电话、有线和无线通信诞生而发展起来的<b>近代密码学</b>
+                        <li>第四阶段：以计算机网络和数据库的数据加密为中心的<b>现代密码学</b>
+                      </ol>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>历届高考样题/真题</h1>
+                  <p>
+                    <form>
+                      <input type="button" onclick="readText(ljGkQts,'4-1')" value="显示题目">
+                      <div id="tt1">
+                        
+                      </div>
+                    </form>
+                  </p>
+                </div>
+              </p>
+            </div>
+          </div>
+            
+          <div data-role="collapsible">
+            <h1>任务2 防治计算机病毒</h1>
+            <p>
+              <div data-role="collapsible-set">
+                <div data-role="collapsible">
+                  <h1>计算机病毒</h1>
+                  <p>
+                    <div style="text-indent:2em;">
+                      指编制者在计算机程序中插入的破坏计算机功能或者毁坏数据，影响计算机使用，并能自我复制的一组<b>计算机指令</b>或者<b>程序代码</b>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>计算机病毒的特征</h1>
+                  <p>
+                    <div>
+                      <dl>
+                        <ul>
+                          <p><dt><b><li>繁殖性</li></b>
+                          <dd>自身复制。是否具有繁殖、感染的特征是判断某段程序为计算机病毒的首要条件
+                          <p><dt><b><li>传染性</li></b>
+                          <dd>能对其他文件或系统传播，并成新的传染源。是计算机病毒的最基本特征，是否具有传染性是判别一个程序代码是否是计算机病毒的最重要依据
+                          <p><dt><b><li>破坏性</li></b>
+                          <dd>能自动对计算机内的文件进行增、删、改、移等操作
+                          <p><dt><b><li>隐蔽性</li></b>
+                          <dd>是指不经过程序代码分析或扫描，病毒程序与正常程序是不容易区别开来的。计算机病毒通常短小精悍，战胜空间很小的可执行程序
+                          <p><dt><b><li>潜伏性</li></b>
+                          <dd>依附或寄生于其他媒体，病毒传染合法的程序和系统后，不立即发作，而是悄悄隐藏起来，然后在用户不觉察的情况下进行传染并发作
+                          <p><dt><b><li>触发性</li></b>
+                          <dd>满足其触发条件或者激活病毒的传染机制，使之进行传染；或者激活病毒的表现部分或破坏部分
+                        </ul>
+                      </dl>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>计算机病毒的分类</h1>
+                  <p>
+                    <div>
+                      <dl>
+                        <ul>
+                          <p><dt><b><li>存在媒体</li></b>
+                          <dd><ul>
+                              <li><b>网络病毒：</b>传播感染网络中的可执行文件
+                              <li><b>文件病毒：</b>感染COM、EXE、DOC等文件
+                              <li><b>引导型病毒：</b>感染启动扇区（Boot）和硬盘的系统引导扇区（MBR）
+                              <li>以上三种病毒的混合型
+                            </ul>
+                          <p><dt><b><li>传染渠道</li></b>
+                          <dd><ul>
+                              <li><b>驻留型病毒：</b>其感染计算机后，把自身的内存驻留部分放在内存（RAM）中，这一部分程序挂接系统调用并合并到操作系统中去，它处于激活状态，一直到计算机关机或重启
+                              <li><b>非驻留型病毒：</b>其在得到机会激活时并不感染计算机内存，一些病毒在内存中留有小部分，但是并不通过这一部分进行传染
+                            </ul>
+                          <p><dt><b><li>破坏能力</li></b>
+                          <dd><ul>
+                              <li><b>无害型：</b>传染时减少磁盘可用空间，对系统没有其他影响
+                              <li><b>无危险型：</b>减少内存、显示图像、发出声音及同类音响
+                              <li><b>危险型：</b>在计算机系统操作中造成严重的错误
+                              <li><b>非常危险型：</b>删除程序、破坏数据、清除系统内存区和操作系统中重要的信息
+                            </ul>
+                          <p><dt><b><li>算法</li></b>
+                          <dd><ul>
+                              <li><b>“蠕虫”型病毒：</b>通过计算机网络传播，不改变文件和资料信息，利用网络从一台机器的内存传播到其他机器的内存，计算网络地址，将自身的病毒通过网络发送。有时它们在系统存在，一般除了内存不占用其他资源
+                              <li><b>寄生型病毒（除伴随和“蠕虫”型，其他病毒均可称为寄生型病毒）：</b>它们依附在系统的引导扇区或文件中，通过系统的功能进行传播，按其算法不同可分为：练习型病毒，病毒自身包含错误，不能进行很好的传播，如一些病毒仅在调试阶段
+                              <li><b>诡秘型病毒：</b>它们一般不直接修改DOS中断和扇区数据，而是通过设备技术和文件缓冲区等DOS内部修改，不易看到资源，使用比较高级的技术。利用DOS空闲的数据区进行工作
+                              <li><b>变形病毒（又称幽灵病毒）：</b>这一病毒使用一个复杂的算法，使自己每传播一份都具有不同的内容和长度。它们一般的作法是一段混有无关指令的解码算法和被变化过的病毒组成
+                            </ul>
+                        </ul>
+                      </dl>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>计算机病毒的发展</h1>
+                  <p>
+                    <div>
+                      <ol>
+                        <li><b>DOS引导阶段：</b>如“小球”、“石头”、“石头2”等
+                        <li><b>DOS可执行阶段：</b>如“耶路撒冷”、“星期天”等
+                        <li><b>伴随批次阶段：</b>如“金蝉”等
+                      </ol>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>防治病毒的主要措施</h1>
+                  <p>
+                    <div>
+                      <ol>
+                        <li>注意对系统文件、重要可执行文件和数据进行备份；
+                        <li>不使用来历不明的程序或数据；
+                        <li>不轻易打开来历不明的电子邮件；
+                        <li>使用新的计算机系统或软件时，要先杀毒后使用；
+                        <li>备份系统和参数，建立系统的应急计划等；
+                        <li>专机专用；
+                        <li>安装杀毒软件；
+                        <li>分类管理数据
+                      </ol>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>木马及常用的木马查杀工具</h1>
+                  <p>
+                    <div>
+                      <ol>
+                        <li><b>木马：</b>“特洛伊木马程序”技术是黑客常用的攻击方法。它通过在电脑系统隐藏一个会在Windows启动时悄悄运行的程序，采用服务器/客户机的运行方式，从而达到在用户上网时控制其电脑的目的。黑客可以利用它窃取口令、浏览驱动器、修改文件、登录注册表等。</li>
+                        <li><b>常用的木马查杀工具</b>
+                          <ol type="I">
+                            <li>Lock Down等上线黑客监视程序</li>
+                            <li>Cleaner工具软件</li>
+                            <li>Sudo99工具软件</li>
+                            <li>木马克星</li>
+                          </ol>
+                        </li>
+                        <li><b>木马的传播途径</b>
+                          <ol type="I">
+                            <li>通过电子邮件的附件传播
+                            <li>通过下载文件传播
+                            <li>通过网页传播
+                            <li>通过聊天工具传播
+                          </ol>
+                        </li>
+                        <li><b>防治木马的主要措施</b>
+                          <ol type="I">
+                            <li>安装杀毒软件和个人防火墙，并及时升级
+                            <li>把个人防火墙设置好安全等级，防止未知程序向外传送数据
+                            <li>可以考虑使用安全性比较好的浏览器和电子邮件客户端工具
+                            <li>如果使用IE浏览器，应该安装QQ安全助手或360安全浏览器，防止恶意网站在自己计算机上安装不明软件和浏览器插件，以免被木马趁机侵入
+                            <li>及时为操作系统打上最新的安全补丁
+                          </ol>
+                        </li>
+                      </ol>
+                    </div>
+                  </p>
+                </div>
+                
+                
+                <div data-role="collapsible">
+                  <h1>历届高考样题/真题</h1>
+                  <p>
+                    <form>
+                      <input type="button" onclick="readText(ljGkQts,'4-2')" value="显示题目">
+                      <div id="tt2">
+                        
+                      </div>
+                    </form>
+                  </p>
+                </div>
+                
+              </div>
+            </p>
+          </div>
+          
+          <div data-role="collapsible">
+            <h1>任务3 使用防火墙</h1>
+            <p>
+              <div data-role="collapsible-set">
+                <div data-role="collapsible">
+                  <h1>防火墙</h1>
+                  <p>
+                    <div style="text-indent:2em;">
+                      <b>防火墙</b>是一类防范措施的总称，使用一种隔离控制技术，在某个机构的网络和不安全的网络之间设置屏障，阻止对信息资源的非法访问和非法传出，以保护内部网络。
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>防火墙的实现手段</h1>
+                  <p>
+                    <div>
+                      <ol>
+                        <li><b>分组过滤：</b>过滤那些未经证实的主机发来的TCP/IP分组</li>
+                        <li><b>IP伪装：</b>以一个虚假的IP地址代替内部主机的IP地址，可躲避外部的监视</li>
+                        <li><b>代理服务：</b>断绝内部和外部的连接</li>
+                      </ol>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>防火墙的功能</h1>
+                  <p>
+                    <div>
+                      <ol>
+                        <li><b>作为网络安全的屏障：</b>一个防火墙（作为阻塞点、控制点）能极大地提高内部网络的安全性，并通过过滤不安全的服务而降低风险
+                        <li><b>强化网络安全策略：</b>通过以防火墙为中心的安全方案配置，可以将所有安全（如口令、身份认证、审计等）都配置在防火墙上，进行集中管理
+                        <li><b>有效记录Internet上的活动：</b>如果所有的访问都经过防火墙，那么防火墙就能记录下这些访问并作出日志记录，同时也能提供网络使用情况的统计数据
+                        <li><b>防止内部信息的泄漏：</b>利用防火墙对内部网络的划分，可实现对内部重点网段的隔离，同时防火墙可以对那些透漏内部细节的服务（如Finger、DNS等）进行隐蔽，以防止内部信息泄露
+                      </ol>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>防火墙的局限</h1>
+                  <p>
+                    <div>
+                      <ol>
+                        <li>无法防止内部入侵</li>
+                        <li>需要特殊网络拓扑结构支持</li>
+                        <li>无法防范SLIP或PPP的拨号攻击</li>
+                        <li>会抑制一些正常的信息通信</li>
+                      </ol>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>防火墙的设计策略</h1>
+                  <p>
+                    <div>
+                      <ol>
+                        <li><b>宽松策略：</b>除非明确禁止，否则全部准许
+                        <li><b>限制策略：</b>除非明确准许，否则全部禁止
+                      </ol>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>防火墙发展历史</h1>
+                  <p>
+                    <div>
+                      <ol>
+                        <li><b>第一代防火墙</b>——采用了包过滤（Packet Filter）技术
+                        <li><b>第二代防火墙</b>——安全过滤功能。即电路层防火墙
+                        <li><b>第三代防火墙</b>——代理防火墙出现。对防火墙本身的安全问题的安全需求
+                        <li><b>第四代防火墙</b>——基于动态包过滤（Dynamic Packet Filter）技术，后来演变为状态监视（Stateful Inspection）技术
+                        <li><b>第五代防火墙</b>——自适应代理（Adaptive Proxy）技术
+                        <li><b>一体化安全网关UTM</b>——UTM统一威胁管理，在防火墙基础上发展起来的，具备防火墙、IPS、防病毒、防垃圾邮件等综合功能的设备。
+                      </ol>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>防火墙的类型</h1>
+                  <p>
+                    <div>
+                      <ol>
+                        <li><b>按技术分</b>
+                        <ul>
+                          <li>包过滤型防火墙
+                          <li>代理服务器型防火墙
+                          <li>复合型防火墙
+                        </ul>
+                        <li><b>按体系结构分</b>
+                        <ul>
+                          <li>双宿主机防火墙
+                          <li>屏蔽主机防火墙
+                          <li>屏蔽子网防火墙
+                        </ul>
+                      </ol>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>Windows7防火墙</h1>
+                  <p><div style="text-indent:2em;">从Windows7开始菜单处进入控制面板，然后找到“系统和安全”项，找到“Windows防火墙”功能，有5个关联的设置：</div>
+                    <div>
+                      <ol><b>
+                        <li>允许程序或功能通过Windows防火墙
+                        <li>更改通知设置
+                        <li>打开或关闭Windows防火墙
+                        <li>还原默认设置
+                        <li>高级设置</b>
+                      </ol>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>历届高考样题/真题</h1>
+                  <p>
+                    <form>
+                      <input type="button" onclick="readText(ljGkQts,'4-3')" value="显示题目">
+                      <div id="tt3">
+                        
+                      </div>
+                    </form>
+                  </p>
+                </div>
+                
+              </div>
+            </p>
+          </div>          
+          
+        </div>
+      </div>
+      
+      <div data-role="footer" data-theme="b" data-position="fixed">
+        <h4>版权所有 <img src="Tianjin.png" width=28px height=28px align="middle" /> &copy;素年子山</h4>
+      </div>
+    </div>
+  </body>
+</html>
