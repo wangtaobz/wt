@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>项目五 编写HTML代码</title>
+    <link rel="stylesheet" href="./jquery/jquery.mobile-1.0.min.css" />
+    <script type="text/javascript" src="./jquery/jquery-1.6.4.min.js">
+    </script>
+    <script type="text/javascript" src="./jquery/jquery.mobile-1.0.min.js">
+    </script>
+    <style type="text/css">
+      form{
+        font-family:"宋体";
+        font-size:18px;
+        line-height:26px;
+      }
+      tr th{
+        background-color:#9bb;
+        color:#33F;
+      }
+    </style>
+    <script type="text/javascript" src="js/new-ljgkytzt.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/ljgkt.js" charset="utf-8"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  </head>
+  
+  <body>
+    <div data-role="page" id="home">
+      <div data-role="header" data-theme="b" data-icon="logo-map">
+        <h1 class="ui-icon-logo-map">项目五 编写HTML代码</h1>
+      </div>
+      
+      <div data-role="content">
+        <div data-role="collapsible-set">
+          <div data-role="collapsible">
+            <h1>任务1 认识HTML</h1>
+            <p>
+              <div data-role="collapsible-set">
+                <div data-role="collapsible">
+                  <h1>网站（WebSite）</h1>
+                  <p style="text-indent:2em;">网站(英文名字为website)是指在因特网上，根据一定的规则，使用HTML等工具制作的用于展示特定内容的相关网页的集合。简单地说，网站是一种通讯工具，就像布告栏一样，人们可以通过网站来发布自己想要公开的资讯，或者利用网站来提供相关的网络服务。人们可以通过网页浏览器来访问网站，获取自己需要的资讯或者享受网络服务。
+                  <div>
+                    <dl>
+                      <ul>
+                        <p><dt><b><li>网站类型</li></b>
+                        <dd><ol>
+                            <li>政府网站</li>
+                            <li>商业网站</li>
+                            <li>企业网站</li>
+                            <li>教育科研机构网站</li>
+                            <li>个人网站</li>
+                            <li>非盈利机构网站</li>
+                          </ol>            
+                        <p><dt><b><li>网站结构</li></b>
+                        <dd><ol>
+                            <li>线性结构</li>
+                            <li>二维表结构</li>
+                            <li>层次结构</li>
+                          </ol>
+                      </ul>
+                    </dl>
+                  </div>
+                  </p>
+                </div>
+          
+                <div data-role="collapsible">
+                  <h1>网页（Web Page）</h1>
+                  <p style="text-indent:2em;">网页是构成网站的基本元素，是承载各种网站应用（如：信息浏览、视频点播、资源下载、电子邮件等）的平台。通俗地说，您的网站就是由网页组成的，如果您只有域名和虚拟主机而没有制作任何网页的话，您的客户仍旧无法访问您的网站。
+网页是一个包含HTML标签的纯文本文件，它可以存放在世界某个角落的某一台计算机中，是万维网中的一“页”，是超文本标记语言格式（标准通用标记语言的一个应用，文件扩展名为.html或.htm）。网页通常用图像档来提供图画。网页要通过网页浏览器来阅读。其中，在浏览器窗口中首先打开的默认页面称为该网站的首页或主页（Home Page），网站首页一般命名为index和default。
+                  <div>
+                    <dl>
+                      <ul>
+                        <p><dt><b><li>网页文件的类型</li></b>
+                        <dd><ol>
+                            <li><b>静态网页：</b>.html或.htm或.shtml</li>
+                            <li><b>动态网页：</b>.asp或.aspx或.php或.jsp</li>
+                          </ol>
+                        <p><dt><b><li>网页的分类</li></b>
+                        <dd><ol>
+                            <li><b>静态网页：</b>运行于客户端的程序、网页、组件，属于静态网页，如HTML、Flash、JavaScript、VBScript等</li>
+                            <li><b>动态网页：</b>运行于服务器端端的程序、网页、组件，属于动态网页，如ASP、PHP、JSP、ASP.net、CGI等</li>
+                          </ol>
+                        <p><dt><b><li>构成网页的元素</li></b>
+                        <dd><ol>
+                            <li><b>基本元素</b>
+                              <ul>
+                                <li>文字</li>
+                                <li>图片</li>
+                              </ul>
+                            </li>
+                            <li><b>其它元素</b>
+                              <ul>
+                                <li>超链接——是网页最重要的特性，链接源可以是文字或图片，通过它可以实现网站间或网站中各页面间的任意跳转。</li>
+                                <li>表格——常用于网页布局和页面排版</li>
+                                <li>音频——.wav, .mp3, .midi等</li>
+                                <li>视频——.avi, .rm, .mpeg等</li>
+                                <li>动画——.swf, .gif等</li>
+                                <li>表单——网页中应用表单向浏览者提供可交互操作界面，以便服务器收集浏览者的各种资料信息。它和脚本程序主要用于动态网页的设计。</li>
+                                <li>脚本程序——脚本程序主要负责运行和处理浏览者向服务器端提交的资料信息（由表单完成的），并向浏览者反馈资料信息处理的结果。它和表单主要用于动态网页的设计。</li>
+                              </ul>
+                            </li>
+                          </ol>
+                      </ul>
+                    </dl>
+                  </div>
+                  </p>
+                </div>
+            
+                <div data-role="collapsible">
+                  <h1>HTML</h1>
+                  <p style="text-indent:2em;"><b>HTML</b>（<b>H</b>yper<b>T</b>ext <b>M</b>arkup <b>L</b>anguage，超文本标记语言），是一种编写超文本文档的简单标记语言。所谓超文本，是因为它可以加入图片、声音、动画、影视等内容，用HTML编写的超文本文档称为HTML文件。每一个HTML文档都是一个静态的网页文件，里面包含许多HTML标记代码，这些代码并<b>不是一种程序语言</b>，它只是一种排版网页中信息显示位置的标记语言，自<b>1990年</b>以来一直被用作WWW的信息表示语言，简单易学，<b>独立于各种操作系统平台，通过浏览器解释执行</b>。
+                  </p>
+                  <p style="text-indent:2em;"><b>HTTP</b>（<b>H</b>yper<b>T</b>ext <b>T</b>ransfer <b>P</b>rotocol，超文本传输协议)是互联网上应用最为广泛的一种网络协议。所有的WWW文件都必须遵守这个标准。HTTP是一个客户端和服务器端请求和应答的标准（TCP）。客户端是终端用户，服务器端是网站。通过使用Web浏览器、网络爬虫或者其它的工具，客户端发起一个到服务器上指定端口（默认端口为80）的HTTP请求。
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>网页布局形式</h1>
+                  <p>
+                    <ol>
+                      <li>“国”字形布局</li>
+                      <li>“匡”字形布局</li>
+                      <li>标题文本型布局</li>
+                      <li>框架型布局</li>
+                      <li>综合型布局</li>
+                      <li>封面型布局</li>
+                      <li>海报型布局</li>
+                      <li>Flash型布局</li>
+                    </ol>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>常用网页制作软件</h1>
+                  <p>
+                    <ol>
+                      <li>FrontPage</li>
+                      <li>网页制作三剑客（Flash、Dreamweaver、Fireworks）</li>
+                      <li>Microsoft Visual Studio</li>
+                      <li>jBuilder</li>
+                    </ol>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>历届高考样题/真题</h1>
+                  <p>
+                    <form>
+                      <input type="button" onclick="readText(ljGkQts,'5-1')" value="显示题目">
+                      <div id="tt1">
+                        
+                      </div>
+                    </form>
+                  </p>
+                </div>
+              </p>
+            </div>
+          </div>
+            
+          <div data-role="collapsible">
+            <h1>任务2 编写网页</h1>
+            <p>
+              <div data-role="collapsible-set">
+                <div data-role="collapsible">
+                  <h1>HTML标记的语法</h1>
+                  <p>
+                    <div>
+                      <dl>
+                        <ul type="circle">
+                          <p><dt><b><li>容器型标记格式</li></b>
+                          <dd>&lt;起始标记>内容&lt;/结束标记>。如：&lt;P>&lt;/P>、&lt;tr>&lt;/tr>等等
+                          <p><dt><b><li>非容器型标记格式</li></b>
+                          <dd>&lt;标记>。如：&lt;Hr>、&lt;Br>等等<br /><br />
+                        </ul>
+                        <ul>
+                          <p><dt><b><li style="color:blue;">包含属性的标记格式</li></b>
+                          <dd>&lt;标记 属性名1="属性值1" 属性名2="属性值2" ……>
+                        </ul>
+                      </dl>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>HTML文档的基本结构</h1>
+                  <p>
+                    <div>
+                      &lt;HTML><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;HEAD><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;TITLE>网页标题&lt;/TITLE><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/HEAD><br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;BODY><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网页主体内容<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/BODY><br />
+                      &lt;/HTML>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>HTML文档结构基本标记</h1>
+                  <p>
+                    <div>
+                      <dl>
+                        <ul>
+                          <p><dt><b><li>&lt;HTML>……&lt;/HTML>标记</li></b>
+                          <dd>&lt;html>与&lt;/html> 标签限定了文档的开始点和结束点，在它们之间是文档的头部和主体。
+                          <p><dt><b><li>&lt;HEAD>……&lt;/HEAD>标记</li></b>
+                          <dd>&lt;HEAD>……&lt;/HEAD>标记只能出现一次，其中可以包含的标记有：<Br />
+                            <ol>
+                              <li>&lt;BASE>标记——可以包含多个，可以不成对出现</li>
+                              <li>&lt;LINK>标记——可以包含多个，可以不成对出现</li>
+                              <li>&lt;META>标记——可以包含多个，可以不成对出现，其中内容有如：
+                                <ul>
+                                  <li>name项：常用的选项有keywords(关键字)， description(网站内容描述)， author(作者)， robots(机器人向导)等。 </li>
+                                  <li>http-equiv项：可用于代替name项， 常用的选项有Expires(期限)， Pragma(cache模式)， Refresh(刷新)， Set-Cookie(cookie设定)， Window-target(显示窗口的设定)， content-Type(显示字符集的设定)等。</li>
+                                  <li>content项：根据name项或http-equiv项的定义来决定此项填写什么样的字符串。</li>
+                                </ul>
+                              </li>
+                              <li>&lt;SCRIPT>标记——可以包含多个，必须成对出现</li>
+                              <li>&lt;STYLE>标记——可以包含多个，可以不成对出现</li>
+                              <li>&lt;TITLE>标记——只能包含一个，必须成对出现</li>
+                            </ol>
+                          <p><dt><b><li>&lt;BODY>……&lt;/BODY>标记</li></b>
+                          <dd>&lt;BODY>……&lt;/BODY>在HTML文档中只能出现一次，用于标识HTML文档的主体部分。在&lt;BODY>……&lt;/BODY>标记之间可包含众多的其他标记和网页内容。其常用属性如下表所示：<br />
+                            <table border="1" cellspacing="0" width="100%">
+                              <tr><th>属性</th><th>功能</th></tr>
+                              <tr><td>BGCOLOR</td><td>设置背景颜色</td></tr>
+                              <tr><td>BACKGROUND</td><td>设置背景图片，若已经设置了背景颜色，则背景图在上</td></tr>
+                              <tr><td>TEXT</td><td>设置文本颜色</td></tr>
+                              <tr><td>LINK</td><td>设置超链接颜色</td></tr>
+                              <tr><td>VLINK</td><td>设置已使用的超链接颜色</td></tr>
+                              <tr><td>ALINK</td><td>设置正在被点击的超链接颜色</td></tr>
+                              <tr><td>LEFTMARGIN</td><td>设置页面的左边距</td></tr>
+                              <tr><td>TOPMARGIN</td><td>设置页面的顶边距</td></tr>
+                            </table>
+                        </ul>
+                      </dl>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>HTML常用标记</h1>
+                  <p>
+                    <div>
+                      <dl>
+                        <ul>
+                          <p><dt><b><li>注释标记</li></b>
+                          <dd>&lt;!注释内容> —— 在标记中的注释内容之前必须加上感叹号“！”
+                          <p><dt><b><li>换行标记</li></b>
+                          <dd>&lt;BR>
+                          <p><dt><b><li>段落标记</li></b>
+                          <dd>&lt;P>……&lt;/P><br />
+                            Align —— 属性，值可以取：LEFT、RIGHT、CENTER之一。
+                          <p><dt><b><li>居中标记</li></b>
+                          <dd>&lt;CENTER>……&lt;/CENTER>
+                          <p><dt><b><li>水平标记</li></b>
+                          <dd>&lt;HR> —— 属性如下表所示：
+                            <table border="1" cellspacing="0" width="100%">
+                              <tr><th>属性</th><th>功能</th></tr>
+                              <tr><td>SIZE</td><td>以像素为单位设置水平分隔线的粗细</td></tr>
+                              <tr><td>WIDTH</td><td>以像素或百分比为单位设置水平分隔线的宽度</td></tr>
+                              <tr><td>ALIGN</td><td>设置水平分隔线的对齐方式（LEFT、RIGHT、CENTER，CENTER为默认值）</td></tr>
+                              <tr><td>COLOR</td><td>设置水平分隔线的颜色</td></tr>
+                              <tr><td>NOSHADE</td><td>取消水平分隔线的3D阴影，无值，不用等号</td></tr>
+                            </table>
+                          <p><dt><b><li>标题标记</li></b>
+                          <dd>&lt;Hn>……&lt;/Hn> —— 其中n取值为1、2、3、4、5、6之一，数字越大，显示的标题字越小。
+                          <p><dt><b><li>字体标记</li></b>
+                          <dd>&lt;FONT>……&lt;/FONT> —— 设置字体、字号和颜色的标记，其属性如下表所示：<br />
+                            <table border="1" cellspacing="0" width="100%">
+                              <tr><th>属性</th><th>功能</th></tr>
+                              <tr><td>FACE</td><td>用于设置文本的字体类别。字体类别可以是字体列表，列表间用逗号分隔</td></tr>
+                              <tr><td>SIZE</td><td>用于设置文本的字体大小，值取1~7七个数字之一，数字越大，字显示越大；也可以使用“+”或“-”来设置字号的相对值</td></tr>
+                              <tr><td>COLOR</td><td>用于设置文本的字体颜色，值取HTML所规定的颜色常量名或取“#RRGGBB”或用RGB(r,g,b)</td></tr>
+                            </table>
+                          <p><dt><b><li>原样显示文本标记</li></b>
+                          <dd>&lt;PRE>……&lt;/PRE>
+                          <p><dt><b><li>字体样式标记</li></b>
+                          <dd><ol>
+                              <li>字体加粗：&lt;B>……&lt;/B></li>
+                              <li>字体倾斜：&lt;I>……&lt;/I></li>
+                              <li>字体加下划线：&lt;U>……&lt;/U></li>
+                              <li>字体加删除线：&lt;S>……&lt;/S></li>
+                            </ol>
+                        </ul>
+                      </dl>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>网页中的特殊符号</h1>
+                  <p>
+                    <div>
+                      <table border="1" cellspacing="0" width="100%">
+                        <tr><th>特殊符号</th><th>网页中的表示法</th></tr>
+                        <tr><td>&nbsp;&nbsp;&lt;</td><td>&nbsp;&nbsp;&amp;lt;</td></tr>
+                        <tr><td>&nbsp;&nbsp;&gt;</td><td>&nbsp;&nbsp;&amp;gt;</td></tr>
+                        <tr><td>&nbsp;&nbsp;&amp;</td><td>&nbsp;&nbsp;&amp;amp;</td></tr>
+                        <tr><td>&nbsp;&nbsp;空格;</td><td>&nbsp;&nbsp;&amp;nbsp;</td></tr>
+                        <tr><td>&nbsp;&nbsp;&copy;</td><td>&nbsp;&nbsp;&amp;copy;</td></tr>
+                        <tr><td>&nbsp;&nbsp;&reg;</td><td>&nbsp;&nbsp;&amp;reg;</td></tr>
+                        <tr><td>&nbsp;&nbsp;&quot;</td><td>&nbsp;&nbsp;&amp;quot;</td></tr>
+                        <tr><td>&nbsp;&nbsp;&trade;</td><td>&nbsp;&nbsp;&amp;trade;</td></tr>
+                      </table>
+                      <b>说明：</b>其中的符号只能使用英文字符，字母全部小写，不能够大写，也不能够大小写混合。
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>历届高考样题/真题</h1>
+                  <p>
+                    <form>
+                      <input type="button" onclick="readText(ljGkQts,'5-2')" value="显示题目">
+                      <div id="tt2">
+                        
+                      </div>
+                    </form>
+                  </p>
+                </div>
+                
+              </div>
+            </p>
+          </div>
+          
+          <div data-role="collapsible">
+            <h1>任务3 建立列表</h1>
+            <p>
+              <div data-role="collapsible-set">
+                <div data-role="collapsible">
+                  <h1>有序列表</h1>
+                  <p>  &lt;OL><br />
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;LI>列表项一&lt;/LI><br />
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;LI>列表项二&lt;/LI><br />
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;LI>列表项三&lt;/LI><br />
+                      &nbsp;&nbsp;&nbsp;&nbsp;……<br />
+                    &lt;/OL><br />
+                    <div>
+                      <table border="1" cellspacing="0" width="100%">
+                        <tr><th>属性名</th><th>取值</th><th>含义</th></tr>
+                        <tr><td rowspan="5">TYPE</td><td>1</td><td>表示列表项用阿拉伯数字编号（1,2,3，……）</td></tr>
+                        <tr><td>A</td><td>表示列表项用大写英文字母编号（A，B，C，……）</td></tr>
+                        <tr><td>a</td><td>表示列表项用小写英文字母编号（a，b，c，……）</td></tr>
+                        <tr><td>I</td><td>表示列表项用大写罗马数字编号（Ⅰ，Ⅱ，Ⅲ，……）</td></tr>
+                        <tr><td>i</td><td>表示列表项用小写罗马数字编号（ⅰ，ⅱ，ⅲ，……）</td></tr>
+                        <tr><td>START</td><td>数字值</td><td>设置编号的起始数值</td></tr>
+                      </table>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>无序列表</h1>
+                  <p>  &lt;UL><br />
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;LI>列表项一&lt;/LI><br />
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;LI>列表项二&lt;/LI><br />
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;LI>列表项三&lt;/LI><br />
+                      &nbsp;&nbsp;&nbsp;&nbsp;……<br />
+                    &lt;/UL><br />
+                    <div>
+                      <table border="1" cellspacing="0" width="100%">
+                        <tr><th>TYPE类型</th><th>含义</th></tr>
+                        <tr><td>disc</td><td>表示列表项符号为实心圆“●”（默认）</td></tr>
+                        <tr><td>circle</td><td>表示列表项符号为空心圆“○”</td></tr>
+                        <tr><td>square</td><td>表示列表项符号为方块“■”</td></tr>
+                      </table>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>概念列表</h1>
+                  <p>
+                    <div>
+                      &lt;DL><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;DT>概念一&lt;/DT>&lt;DD>概念定义一&lt;/DD><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;DT>概念二&lt;/DT>&lt;DD>概念定义二&lt;/DD><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;DT>概念三&lt;/DT>&lt;DD>概念定义三&lt;/DD><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;……<br />
+                      &lt;/DL><br />
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>目录列表</h1>
+                  <p>
+                    <div>
+                      &lt;DIR><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;LI>列表项一&lt;/LI><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;LI>列表项二&lt;/LI><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;LI>列表项三&lt;/LI><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;……<br />
+                      &lt;/DIR><br />
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>菜单列表</h1>
+                  <p>
+                    <div>
+                      &lt;MENU><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;LI>列表项一&lt;/LI><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;LI>列表项二&lt;/LI><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;LI>列表项三&lt;/LI><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;……<br />
+                      &lt;/MENU><br />
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>列表嵌套</h1>
+                  <p>
+                    <div style="text-indent:2em;">
+                      列表嵌套能将制作的网页页面分割为多层次，比如图书的目录，让人觉得有很强的层次感。有序列表和无序列表不仅能自身嵌套，而且也能互相嵌套。
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>历届高考样题/真题</h1>
+                  <p>
+                    <form>
+                      <input type="button" onclick="readText(ljGkQts,'5-3')" value="显示题目">
+                      <div id="tt3">
+                        
+                      </div>
+                    </form>
+                  </p>
+                </div>
+                
+              </div>
+            </p>
+          </div>          
+          
+          <div data-role="collapsible">
+            <h1>任务4 建立超链接</h1>
+            <p>
+              <div data-role="collapsible-set">
+                <div data-role="collapsible">
+                  <h1>建立超链接</h1>
+                  <p><b>格式：</b>&lt;A Href="URL">链接源&lt;/A>
+                    <div>
+                      <table border="1" cellspacing="0" width="100%">
+                        <caption><h4>TARGET属性的取值及含义</h4></caption>
+                        <tr><th>属性值</th><th colspan="2">含义</th></tr>
+                        <tr><td>&nbsp;_blank</td><td colspan="2">在新窗口中打开被链接文档</td></tr>
+                        <tr><td>&nbsp;_parent</td><td colspan="2">默认。在相同的框架中打开被链接文档</td></tr>
+                        <tr><td>&nbsp;_self</td><td colspan="2">在父框架集中打开被链接文档</td></tr>
+                        <tr><td>&nbsp;_top</td><td>在整个窗口中打开被链接文档</td><td rowspan="2">跟框架集结构相关</td></tr>
+                        <tr><td>框架名称</td><td>在指定的框架中打开被链接文档</td></tr>
+                      </table>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>超链接的应用</h1>
+                  <p>
+                    <div>
+                      <ol>
+                        <li><b>本地链接：</b>链接目标为本地计算机的不同文件的超链接称为本地链接，本地链接通常用相对路径来表示链接目标的位置，所以又称相对URL链接。</li>
+                        <li><b>网络链接：</b>链接目标为远程网络服务器上的资源的超链接称为网络链接，网络链接通常用绝对路径来表示链接目标的位置，要有完整的URL地址，包括协议名，主机名，文件所在主机上的路径以及文件名，所以又称绝对URL链接。</li>
+                        <li><b>书签链接：</b>
+                          <ol type="A">
+                            <li>建立书签
+                              <p><b>格式：</b>&lt;A NAME="书签名">……&lt;/A></p>
+                            </li>
+                            <li>建立书签链接
+                              <p><b>格式1：</b>页内书签链接<br>
+                              &lt;A HREF="#书签名">链接源&lt;/A></p>
+                              <p><b>格式2：</b>外页书签链接<br>
+                              &lt;A HREF="外页URL#书签名">链接源&lt;/A></p>
+                            </li>
+                          </ol>
+                        </li>
+                        <li><b>电子邮件链接：</b>
+                          <p><b>格式：</b>&lt;A HREF="mailto:邮件地址?subject=邮件主题>链接源&lt;/A></p>
+                        </li>
+                      </ol>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>关于路径</h1>
+                  <p>
+                    <div>
+                      <p><b>绝对路径：</b>也称绝对URL，它给出目标文件的完整URL地址，包括传输协议在内，如果链接的文件位于外部服务器上，则必须使用绝对路径。<br>
+                      <b>一个完整的URL地址的一般格式为：</b><br>
+                      Protocol://hostname[:port]/path</p>
+                      <p><b>相对路径：</b>也称相对URL，相对路径又分为根相对路径和文档相对路径，根相对路径总是以站点根目录“/”为起始目录，写起来比较简单，但大多数情况下，不建议使用这种链接形式。文档相对路径是以当前文档所在路径为起始目录，进行相对的文档查找。一个相对路径不包括协议和主机地址信息，通常只包含文件夹名和文件名，甚至只有文件名。<br />
+                      1. “/” —— 根路径<br />
+                      2. “./” —— 当前目录（可省）<br />
+                      3. “../” —— 上一级目录<br />
+                      </p>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>关于&lt;A>标记的几个CSS伪类</h1>
+                  <p>
+                    <div>
+                      <table border="1" cellspacing="0" width="100%">
+                        <tr><th>伪类</th><th>含义</th></tr>
+                        <tr><td>&nbsp;a:link{}</td><td>未访问的链接</td></tr>
+                        <tr><td>&nbsp;a:visited{}</td><td>已访问的链接</td></tr>
+                        <tr><td>&nbsp;a:hover{}</td><td>当有鼠标悬停在链接上</td></tr>
+                        <tr><td>&nbsp;a:active{}</td><td>被选择的链接</td></tr>
+                      </table>
+                      <p>上述顺序不能乱，可缺少，但顺序必须如上表所示。</p>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>历届高考样题/真题</h1>
+                  <p>
+                    <form>
+                      <input type="button" onclick="readText(ljGkQts,'5-4')" value="显示题目">
+                      <div id="tt4">
+                        
+                      </div>
+                    </form>
+                  </p>
+                </div>
+                
+              </div>
+            </p>
+          </div>          
+          
+          <div data-role="collapsible">
+            <h1>任务5 建立表格</h1>
+            <p>
+              <div data-role="collapsible-set">
+                <div data-role="collapsible">
+                  <h1>定义表格</h1>
+                  <p>
+                    <div>
+                      &lt;TABLE BORDER><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;CAPTION>表格标题&lt;/CAPTION><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;TR><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;TH>表头单元格&lt;/TH><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;TH>表头单元格&lt;/TH><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;……<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/TR><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;TR><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;TD>数据单元格&lt;/TD><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;TD>数据单元格&lt;/TD><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;……<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/TR><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;……<br />
+                      &lt;/TABLE><br />
+                      <br /><b>说明：</b>
+                      <p>A. 对&lt;TABLE>标记的“BORDER”属性，如果有“BORDER”，但没有指明值，则其取值为“1”；如果没有“BORDER”属性，则相当于指明：BORDER="0"（默认）。</p>
+                      <p>B. 对&lt;CAPTION>标记，它必须与&lt;TABLE>标记配合使用，可以省略；其属性有“ALIGN”，值取“LEFT、RIGHT、CENTER”之一（默认：CENTER）；标题放置在表的顶部或底部，则其属性“VALIGN”决定，一个是“TOP”（默认）放顶部，另一个“BOTTOM”放底部。
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>合并表格行列</h1>
+                  <p>
+                    <div>
+                      <p><b>1. 合并表格行</b><br />
+                      <b>格式：</b>&lt;TH ROWSPAN="合并的行数"><br />
+                      <b>或：</b>&lt;TD ROWSPAN="合并的行数"></p>
+                      <p><b>2. 合并表格列</b><br />
+                      <b>格式：</b>&lt;TH COLSPAN="合并的列数"><br />
+                      <b>或：</b>&lt;TD COLSPAN="合并的列数"></p>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>&lt;TABLE>标记的常用属性</h1>
+                  <p>
+                    <div>
+                      <table border="1" cellspacing="0" width="100%">
+                        <tr><th>属性</th><th>功能</th></tr>
+                        <tr><td>WIDTH</td><td>设置表格的宽度（单位为像素或百分比）</td></tr>
+                        <tr><td>HEIGHT</td><td>设置表格的高度（单位为像素或百分比）</td></tr>
+                        <tr><td>ALIGN</td><td>设置表格在页面中的水平对齐方式</td></tr>
+                        <tr><td>BACKGROUND</td><td>设置表格的背景图片</td></tr>
+                        <tr><td>BGCOLOR</td><td>设置表格的背景颜色</td></tr>
+                        <tr><td>BORDER</td><td>设置表格边框的宽度（单位为像素）</td></tr>
+                        <tr><td>BORDERCOLOR</td><td>设置表格边框的颜色</td></tr>
+                        <tr><td>CELLSPACING</td><td>设置单元格之间的间距（单位为像素）</td></tr>
+                        <tr><td>CELLPADDING</td><td>设置单元格内容与单元格边界间的距离（单位为像素）</td></tr>
+                      </table>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>&lt;TR>标记的常用属性</h1>
+                  <p>
+                    <div>
+                      <table border="1" cellspacing="0" width="100%">
+                        <tr><th>属性</th><th>功能</th></tr>
+                        <tr><td>HEIGHT</td><td>设置表格行的高度（单位为像素或百分比）</td></tr>
+                        <tr><td>ALIGN</td><td>设置表格行内容在本行各单元格的水平对齐方式</td></tr>
+                        <tr><td>VALIGN</td><td>设置表格行的垂直对齐方式（值有：TOP、MIDDLE、BOTTOM）</td></tr>
+                        <tr><td>BGCOLOR</td><td>设置表格行的背景颜色</td></tr>
+                        <tr><td>BORDERCOLOR</td><td>设置表格行边框的颜色</td></tr>
+                      </table>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>&lt;TH>和&lt;TD>标记的常用属性</h1>
+                  <p>
+                    <div>
+                      <table border="1" cellspacing="0" width="100%">
+                        <tr><th>属性</th><th>功能</th></tr>
+                        <tr><td>WIDTH</td><td>设置单元格的宽度（单位为像素或百分比）</td></tr>
+                        <tr><td>HEIGHT</td><td>设置单元格的高度（单位为像素或百分比）</td></tr>
+                        <tr><td>ALIGN</td><td>设置单元格中数据的水平对齐方式</td></tr>
+                        <tr><td>VALIGN</td><td>设置单元格中数据的垂直对齐方式</td></tr>
+                        <tr><td>BGCOLOR</td><td>设置单元格的背景颜色</td></tr>
+                        <tr><td>BACKGROUND</td><td>设置单元格边框的背景图片</td></tr>
+                        <tr><td>BORDERCOLOR</td><td>设置单元格边框的颜色</td></tr>
+                        <tr><td>ROWSPAN</td><td>设置单元格在列内合并的行数</td></tr>
+                        <tr><td>COLSPAN</td><td>设置单元格在行内合并的列数</td></tr>
+                      </table>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>表格布局</h1>
+                  <p>
+                    <div>
+                      网页页面布局常用表格布局法。
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>历届高考样题/真题</h1>
+                  <p>
+                    <form>
+                      <input type="button" onclick="readText(ljGkQts,'5-5')" value="显示题目">
+                      <div id="tt5">
+                        
+                      </div>
+                    </form>
+                  </p>
+                </div>
+                
+              </div>
+            </p>
+          </div>
+          
+          <div data-role="collapsible">
+            <h1>任务6 建立表单</h1>
+            <p>
+              <div data-role="collapsible-set">
+                <div data-role="collapsible">
+                  <h1>表单常识</h1>
+                  <p>
+                    <div>
+                      <p style="text-indent:2em;">表单是在网页中向访问都提供的一种交互式操作界面，主要作用是向访问者收集各种资料信息，并将这些资料信息提交给网络服务器的CGI（通用网关接口）程序进行处理，使网页具有交互操作的功能。</p>
+                      <p style="text-indent:2em;">表单包括两个部分：一部分是HTML源代码用于描述表单（例如，域，标签和用户在页面上看见的按钮），另一部分是脚本或应用程序用于处理提交的信息（如CGI脚本）。</p>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>定义表单</h1>
+                  <p>
+                    <div>
+                      <b>格式：</b>&lt;FORM ACTION="URL" METHOD="GET|POST" TARGET="...">. . .&lt;/FORM>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>表单的输入控件</h1>
+                  <p>
+                    <div>
+                      <b>格式：</b>&lt;INPUT TYPE="输入控件类型"><br />
+                      <table border="1" cellspacing="0" width="100%">
+                        <caption><h4>表单常用输入控件类型</h4></caption>
+                        <tr><th>类型</th><th>含义</th></tr>
+                        <tr><td>text</td><td>指定表单控件类型为单行文本框</td></tr>
+                        <tr><td>password</td><td>指定表单控件类型为密码框</td></tr>
+                        <tr><td>file</td><td>指定表单控件类型为文件域</td></tr>
+                        <tr><td>radio</td><td>指定表单控件类型为单选框</td></tr>
+                        <tr><td>checkbox</td><td>指定表单控件类型为复选框</td></tr>
+                        <tr><td>submit</td><td>指定表单控件类型为提交按钮</td></tr>
+                        <tr><td>reset</td><td>指定表单控件类型为重置按钮</td></tr>
+                        <tr><td>button</td><td>指定表单控件类型为普通按钮</td></tr>
+                      </table>
+                      <table border="1" cellspacing="0" width="100%">
+                        <caption><h4>表单输入控件的常用属性</h4></caption>
+                        <tr><th>属性</th><th>功能</th><th>适用于</th></tr>
+                        <tr><td>TYPE</td><td>指定表单输入框的类型</td><td>所有控件，必选</td></tr>
+                        <tr><td>NAME</td><td>指定各输入控件的名称，可为CGI引用</td><td>所有控件</td></tr>
+                        <tr><td>SIZE</td><td>设置输入框的长度</td><td>文本框、密码框和文件域</td></tr>
+                        <tr><td rowspan="2">VALUE</td><td>输入控件提交的值</td><td>文本框、密码框、文件域、单选框和复选框</td></tr>
+                        <tr><td>设置按钮上的显示文字</td><td>提交、重置和普通按钮</td></tr>
+                        <tr><td>CHECKED</td><td>设置单、复选框初始状态，有此为选中态</td><td>单选框和复选框</td></tr>
+                        <tr><td>MAXLENGTH</td><td>设置输入控件中可输入的最大长度</td><td>文本框、密码框</td></tr>
+                      </table>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>多行文本框</h1>
+                  <p>
+                    <div>
+                      &lt;TEXTAREA NAME="名称" ROWS="行数" COLS="列数"><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;文本内容<br />
+                      &lt;/TEXTAREA><br />
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>列表框</h1>
+                  <p>
+                    <div>
+                      &lt;SELECT><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;OPTION>列表项一&lt;/OPTION><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;OPTION>列表项二&lt;/OPTION><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;OPTION>列表项三&lt;/OPTION><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;……<br />
+                      &lt;/SELECT><br />
+                      
+                      <table border="1" cellspacing="0" width="100%">
+                        <caption><h4>列表框的常用属性</h4></caption>
+                        <tr><th>属性</th><th>功能</th><th>适用于</th></tr>
+                        <tr><td>NAME</td><td>指定各输入控件的名称，可为CGI引用</td><td rowspan="3">只用于&lt;SELECT>标记</td></tr>
+                        <tr><td>SIZE</td><td>设置显示的列表项数。如省略SIZE属性或取值为1时，则为下拉列表框</td></tr>
+                        <tr><td>MULTIPLE</td><td>表示可以做多项选择，省略时只能选择一项</td></tr>
+                        <tr><td>SELECTED</td><td>表示当前项为默认选中的列表项</td><td rowspan="2">只用于&lt;OPTION>标记</td></tr>
+                        <tr><td>VALUE</td><td>表示当前项的取值</td></tr>
+                      </table>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>表单处理程序</h1>
+                  <p>
+                    <div><b>脚本格式如下所示：</b><br /><br />
+                      &lt;SCRIPT language="javascript" type="text/javascript"><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;function 函数名([参数]){<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;……<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;}<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;……<br />
+                      &lt;/SCRIPT><br />
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>历届高考样题/真题</h1>
+                  <p>
+                    <form>
+                      <input type="button" onclick="readText(ljGkQts,'5-6')" value="显示题目">
+                      <div id="tt6">
+                        
+                      </div>
+                    </form>
+                  </p>
+                </div>
+                
+              </div>
+            </p>
+          </div>
+          
+          <div data-role="collapsible">
+            <h1>任务7 建立框架</h1>
+            <p>
+              <div data-role="collapsible-set">
+                <div data-role="collapsible">
+                  <h1>框架集基本结构</h1>
+                  <p>
+                    <div>
+                      &lt;HTML><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;HEAD><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;TITLE>网页标题&lt;/TITLE><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/HEAD><br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;FRAMESET><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;FRAME SRC="网页URL一"><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;FRAME SRC="网页URL二"><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;……<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/FRAMESET><br />
+                      &lt;/HTML>
+                      
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>&lt;FRAMESET>标记</h1>
+                  <p style="text-indent:2em;">&lt;FRAMESET>...&lt;/FRAMESET>标记用于在框架网页中划分浏览器窗口的多个不同显示区域，取代了普通网页中的&lt;BODY>...&lt;/BODY>标记。
+                    <div>
+                      <table border="1" cellspacing="0" width="100%">
+                        <caption><h4>&lt;FRAMESET>标记的常用属性</h4></caption>
+                        <tr><th>属性</th><th>功能</th></tr>
+                        <tr><td>ROWS</td><td>用于在浏览器窗口以像素或百分比为单位从上到下划分多个不同的显示区域</td></tr>
+                        <tr><td>COLS</td><td>用于在浏览器窗口以像素或百分比为单位从左到右划分多个不同的显示区域</td></tr>
+                        <tr><td>FRAMEBORDER</td><td>用于指定是否显示边框：0——不显示，1——显示</td></tr>
+                        <tr><td>BORDER</td><td>设置框架边框的粗细</td></tr>
+                        <tr><td>BORDERCOLOR</td><td>设置框架边框的颜色</td></tr>
+                      </table>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>&lt;FRAME>标记</h1>
+                  <p style="text-indent:2em;">&lt;FRAME>标记用于指定在&lt;/FRAMESET>标记中被划分的具体的多个不同显示区域及其中所包含的网页。
+                    <div>
+                      <table border="1" cellspacing="0" width="100%">
+                        <caption><h4>&lt;FRAME>标记的常用属性</h4></caption>
+                        <tr><th>属性</th><th>功能</th></tr>
+                        <tr><td>SRC</td><td>用于指定当前显示区域中初始时显示的网页</td></tr>
+                        <tr><td>NAME</td><td>用于指定当前显示区域的子窗口名称</td></tr>
+                        <tr><td>NORESIZE</td><td>用于指定多个不同的显示区域是否可以通过拖动框架边框在浏览器中调整显示区域的大小</td></tr>
+                      </table>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>典型框架结构应用</h1>
+                  <p>
+                    <div>
+                      <b>代码如下：</b><BR />
+                      &lt;HTML><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;HEAD><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;TITLE>框架网页应用&lt;/TITLE><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/HEAD><br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;FRAMESET ROWS="15%,*"><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;FRAME SRC="#"><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;FRAMESET COLS="20%,*"><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;FRAME SRC="#"><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;FRAME SRC="#" NORESIZE NAME="content"><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/FRAMESET><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/FRAMESET><br />
+                      &lt;/HTML><br /><br />
+                      <b>效果图如下：</b>
+                      <div><img width="100%" src="classicFrames.png" /></div>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>浮动框架&lt;IFRAME>标记</h1>
+                  <p><b>格式：</b><BR />&lt;IFRAME SRC="URL"><br />&lt;/IFRAME><br />
+                    <div>
+                      <table border="1" cellspacing="0" width="100%">
+                        <caption><h4>&lt;IFRAME>标记的常用属性</h4></caption>
+                        <tr><th>属性</th><th>功能</th></tr>
+                        <tr><td>SRC</td><td>指定在窗口中显示另一个页面的文件URL</td></tr>
+                        <tr><td>WIDTH</td><td>指定浮动框架的宽度，单位为像素</td></tr>
+                        <tr><td>HEIGHT</td><td>指定浮动框架的高度，单位为像素</td></tr>
+                        <tr><td>SCROLLING</td><td>指定浮动框架是否出现滚动条，取值为：AUTO、YES、NO，分别表示：自动、出现、不出现</td></tr>
+                        <tr><td>FRAMEBORDER</td><td>指定浮动框架区域边框的宽度，单位为像素。设置为0，表示没有边框</td></tr>
+                      </table>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>历届高考样题/真题</h1>
+                  <p>
+                    <form>
+                      <input type="button" onclick="readText(ljGkQts,'5-7')" value="显示题目">
+                      <div id="tt7">
+                        
+                      </div>
+                    </form>
+                  </p>
+                </div>
+                
+              </div>
+            </p>
+          </div>
+          
+          <div data-role="collapsible">
+            <h1>任务8 使用多媒体</h1>
+            <p>
+              <div data-role="collapsible-set">
+                <div data-role="collapsible">
+                  <h1>多媒体文件类型</h1>
+                  <p>
+                    <div>
+                      <ol>
+                        <li><b>图像文件类型：</b>
+                          <ul>
+                            <li>JPEG（*.jpg或*.jpeg）</li>
+                            <li>GIF（*.gif）</li>
+                            <li>PNG（*.png）</li>
+                          </ul>
+                        </li>
+                        <li><b>音频文件类型：</b>
+                          <ul>
+                            <li>WAV（*.wav）</li>
+                            <li>MP3（*.mp3）</li>
+                            <li>MIDI（*.mid）</li>
+                            <li>RA（*.ra）</li>
+                            <li>RM（*.rm）</li>
+                          </ul>
+                        </li>
+                        <li><b>视频文件类型：</b>
+                          <ul>
+                            <li>AVI（*.avi）</li>
+                            <li>SWF（*.swf）</li>
+                          </ul>
+                        </li>
+                      </ol>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>在网页中插入图像</h1>
+                  <p>
+                    <div>
+                      <ol>
+                        <li><b>图像标记</b>，格式如下：<BR />&lt;IMG SRC="图像文件URL">
+                          <table border="1" cellspacing="0" width="100%">
+                            <caption><h4>&lt;IMG>标记的常用属性</h4></caption>
+                            <tr><th>属性</th><th>功能</th></tr>
+                            <tr><td>SRC</td><td>用于设置插入的图像文件URL</td></tr>
+                            <tr><td>WIDTH</td><td>指定图像显示的宽度，单位为像素</td></tr>
+                            <tr><td>HEIGHT</td><td>指定图像显示的高度，单位为像素</td></tr>
+                            <tr><td>ALIGN</td><td>设置图像的位置或其他内容与图像的对齐方式</td></tr>
+                            <tr><td>BORDER</td><td>设置图像的边框大小</td></tr>
+                            <tr><td>VSPACE</td><td>设置图像顶部和底部与其他内容之间的间隔</td></tr>
+                            <tr><td>HSPACE</td><td>设置图像左侧和右侧与其他内容之间的间隔</td></tr>
+                          </table>
+                        </li>
+                        <li><b>图像链接</b>，格式如下：<BR />&lt;A HREF="链接目标URL">&lt;IMG SRC="图像文件URL">&lt;/A>
+                        </li>
+                      </ol>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>在网页中插入音频和视频</h1>
+                  <p>
+                    <div>
+                      <ol>
+                        <li><b>使用&lt;EMBED>标记插入声音和视频</b>，格式：<br />
+                          &lt;EMBED SRC="音频或视频文件URL">
+                          <table border="1" cellspacing="0" width="100%">
+                            <caption><h4>&lt;EMBED>标记的常用属性</h4></caption>
+                            <tr><th>属性</th><th>功能</th></tr>
+                            <tr><td>SRC</td><td>指定声音或视频文件的URL</td></tr>
+                            <tr><td>WIDTH</td><td>设置播放音频或视频文件的控制面板的宽度。取值为正整数（PX）或百分数</td></tr>
+                            <tr><td>HEIGHT</td><td>设置播放音频或视频文件的控制面板的高度。取值为正整数（PX）或百分数</td></tr>
+                            <tr><td>AUTOSTART</td><td>设置音频或视频文件是否在下载完成之后自动播放，TRUE — 自动播放（默认）；FALSE — 不自动播放</td></tr>
+                            <tr><td>LOOP</td><td>设置音频或视频文件是否循环播放以及播放的次数，取值为一正整数 — 循环播放的次数；TRUE — 无限循环；FALSE — 只播放一次</td></tr>
+                            <tr><td>STARTTIME</td><td>设置音频或视频文件开始播放的时间，未定义则从文件开头播放。starttime=mm:ss（分：秒）</td></tr>
+                            <tr><td>VOLUME</td><td>设置音频或视频文件的音量大小，未定义则使用系统本身的设定</td></tr>
+                            <tr><td>HIDDEN</td><td>设置播放音频或视频文件的控制面板是否显示。TURE — 显示；FALSE — 不显示</td></tr>
+                            <tr><td>CONTROLS</td><td>设置播放音频或视频文件的控制面板样式。console — 正常面板；smallconsole — 较小面板；playbutton — 只显播放按钮；pausebutton — 只显暂停按钮；stopbutton — 只显停止按钮；volumelever — 只显音量调节按钮</td></tr>
+                          </table>
+                        </li>
+                        <li><b>使用&lt;BGSOUND>标记为网页插入背景音乐</b>，格式：<br />
+                          &lt;BGSOUND SRC="音频文件URL">
+                          <table border="1" cellspacing="0" width="100%">
+                            <caption><h4>&lt;BGSOUND>标记的常用属性</h4></caption>
+                            <tr><td>SRC</td><td>指定背景音乐的URL</td></tr>
+                            <tr><td>AUTOSTART</td><td>设置背景音乐是否在下载完成之后自动播放，TRUE — 自动播放（默认）；FALSE — 不自动播放</td></tr>
+                            <tr><td>LOOP</td><td>设置背景音乐是否循环播放以及播放的次数，取值为一正整数 — 循环播放的次数；INFINITE — 无限循环，直到关闭该网页</td></tr>
+                          </table>
+                        </li>
+                        <li><b>使用&lt;IMG>标记为网页插入AVI文件</b>，格式：<br/>
+                          &lt;IMG DYNSRC="AVI视频文件URL">
+                          <table border="1" cellspacing="0" width="100%">
+                            <caption><h4>&lt;IMG>标记的常用属性</h4></caption>
+                            <tr><th>属性</th><th>功能</th></tr>
+                            <tr><td>DYNSRC</td><td>指定AVI文件的URL</td></tr>
+                            <tr><td>START</td><td>设置AVI文件的播放方式，FILEOPEN — 网页打开时立即播放；MOUSEOVER — 当鼠标移动到AVI文件上时播放</td></tr>
+                            <tr><td>LOOP</td><td>设置AVI文件循环播放的次数</td></tr>
+                          </table>
+                        </li>
+                      </ol>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>多媒体处理软件</h1>
+                  <p>
+                    <div>
+                      <ol>
+                        <li><b>数字音频处理</b>
+                          <ul>
+                            <li>GoldWave</li>
+                            <li>Cool Edit Pro</li>
+                            <li>Wave Edit</li>
+                            <li>Sound Forge</li>
+                          </ul>
+                        </li>
+                        <li><b>视频处理</b>
+                          <ul>
+                            <li>Premiere Pro</li>
+                            <li>Video Editor</li>
+                            <li>会声会影</li>
+                          </ul>
+                        </li>
+                        <li><b>图形、图像处理</b>
+                          <ul>
+                            <li>Photoshop</li>
+                            <li>Fireworks</li>
+                          </ul>
+                        </li>
+                        <li><b>动画处理</b>
+                          <ul>
+                            <li>COOL 3D</li>
+                            <li>Flash</li>
+                            <li>3D MAX</li>
+                          </ul>
+                        </li>
+                      </ol>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>历届高考样题/真题</h1>
+                  <p>
+                    <form>
+                      <input type="button" onclick="readText(ljGkQts,'5-8')" value="显示题目">
+                      <div id="tt8">
+                        
+                      </div>
+                    </form>
+                  </p>
+                </div>
+                
+              </div>
+            </p>
+          </div>
+          
+          <div data-role="collapsible">
+            <h1>任务9 应用CSS</h1>
+            <p>
+              <div data-role="collapsible-set">
+                <div data-role="collapsible">
+                  <h1>CSS基本语法</h1>
+                  <p>
+                    <div>
+                      CSS的定义由三个部分构成：选择符、属性和属性的取值。<br />
+                      <b>格式：</b><br />
+                      选择符{属性:值}<br /><br />
+                      <b>说明：</b>
+                      <ol>
+                        <li>选择符可以是多种形式，一般为定义样式的HTML标记，用于定义HTML标记的属性和取值，属性和取值之间用冒号分隔</li>
+                        <li>属性的取值由多个单词构成时，必须用引号将其属性的取值引起来</li>
+                        <li>如果需要对一个选择符指定多个属性时，多个属性和值之间用分号隔开，书写时，为了方便阅读，可以采用分行的书写格式</li>
+                      </ol>
+                      <b>举例：</b><br />
+                      p{<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;text-align:center;<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;color:black;<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;font-family:"sans serif";<br />
+                      }
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>常用的几种选择器</h1>
+                  <p>
+                    <div>
+                      <table cellspacing="0" cellpadding="0" width="100%" border="1">
+                        <caption><h4>1.基础选择器</h4></caption>
+                        <tr><th>选择器</th><th>含义</th><th>示例</th></tr>
+                        <tr><td>*</td><td>通用元素选择器，匹配任何元素</td>
+                        <td>* { margin:0; padding:0; }</td></tr>
+                        <tr><td>E</td><td>标签选择器，匹配所有使用E标签的元素</td><td>p { font-size:2em; }</td></tr>
+                        <tr><td>.info和E.info</td><td>class选择器，匹配所有class属性中包含info的元素</td><td>.info { background:#ff0; }<br/><br/>p.info { background:#ff0; }</td></tr>
+                        <tr><td>#info和E#info</td><td>id选择器，匹配所有id属性等于footer的元素</td><td>#info { background:#ff0; }<br/><br/>p#info { background:#ff0; }</td></tr>
+                      </table>
+                      
+                      <table cellspacing="0" cellpadding="0" width="100%" border="1">
+                        <caption><h4>2.组合选择器</h4></caption>
+                        <tr><th>选择器</th><th>含义</th><th>示例</th></tr>
+                        <tr><td>E,F</td><td>多元素选择器，同时匹配所有E元素或F元素，E和F之间用逗号分隔</td><td>Div,p { color:#f00; }</td></tr>
+                        <tr><td>E F</td><td>后代元素选择器，匹配所有属于E元素后代的F元素，E和F之间用空格分隔</td><td>#nav li { display:inline; }<br/><br/>li a { font-weight:bold; }</td></tr>
+                      </table>
+                      
+                      <table border="1" cellspacing="0" width="100%">
+                        <caption><h4>3.&lt;A>标记的几个伪类选择器</h4></caption>
+                        <tr><th>伪类</th><th>含义</th></tr>
+                        <tr><td>&nbsp;a:link{}</td><td>未访问的链接</td></tr>
+                        <tr><td>&nbsp;a:visited{}</td><td>已访问的链接</td></tr>
+                        <tr><td>&nbsp;a:hover{}</td><td>当有鼠标悬停在链接上</td></tr>
+                        <tr><td>&nbsp;a:active{}</td><td>被选择的链接</td></tr>
+                      </table>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>插入CSS样式表的方法</h1>
+                  <p>
+                    <div>
+                      <ol>
+                        <li>链接到CSS外部样式表</li>
+                        <li>CSS内部样式表</li>
+                        <li>导入到CSS外部样式表</li>
+                        <li>CSS内嵌样式表</li>
+                      </ol>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>链接到CSS外部样式表</h1>
+                  <p>
+                    <div>
+                      <b>格式：</b><br />
+                      &lt;LINK REL="stylesheet" TYPE="text/css" HREF="外部样式表文件URL">
+                      <table border=1 cellspacing=0 width=100%>
+                        <tr>
+                          <th>属性</th>
+                          <th>取值</th>
+                          <th>功能</th>
+                        </tr>
+                        <tr>
+                          <td>HREF</td>
+                          <td>外部样式表文件URL</td>
+                          <td>指定外部样式表的URL，不能省</td>
+                        </tr>
+                        <tr>
+                          <td>REL</td>
+                          <td>stylesheet</td>
+                          <td>用于设置链接类型</td>
+                        </tr>
+                        <tr>
+                          <td>TYPE</td>
+                          <td>text/css</td>
+                          <td>用于设置链接内容的类型</td>
+                        </tr>
+                      </table>
+                      <br />
+                      <b>举例：</b><br />
+                      &lt;HTML><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;HEAD><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;……<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt;LINK REL="stylesheet" TYPE="text/css" HREF="mystyle.css"></b><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;……<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/HEAD><br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;BODY><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;……<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/BODY><br />
+                      &lt;/HTML>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>CSS内部样式表</h1>
+                  <p>
+                    <div>
+                      <b>格式：</b><br />
+                      &lt;STYLE TYPE="text/css">内部样式表&lt;STYLE>
+                      <br /><br />
+                      <b>举例：</b><br />
+                      &lt;HTML><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;HEAD><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;……<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;STYLE TYPE="text/css"><br /><b>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hr{color:red;}<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p{margin-left:9px;}<br /></b>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/STYLE><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;……<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/HEAD><br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;BODY><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;……<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/BODY><br />
+                      &lt;/HTML>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>导入到CSS外部样式表</h1>
+                  <p>
+                    <div>
+                      <b>格式</b>（注意其中所处位置和后面的分号）：<br />
+                      @import "外部样式表文件URL";
+                      <br /><br />
+                      <b>举例：</b><br />
+                      &lt;HTML><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;HEAD><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;……<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;STYLE TYPE="text/css"><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>@import "mystyle.css";</b><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hr{color:red;}<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p{margin-left:9px;}<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/STYLE><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;……<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/HEAD><br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;BODY><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;……<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/BODY><br />
+                      &lt;/HTML>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>CSS内嵌样式表</h1>
+                  <p>
+                    <div>
+                      <p style="text-indent:2em;">内嵌样式是直接将在HTML文件的标记中通过“STYLE”属性来定义的样式。内嵌样式可以直接对某个标记单独定义样式，使用起来简单、灵活、方便。</p>
+                      <b>举例：</b><br />
+                      &lt;HTML><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;HEAD><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;……<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/HEAD><br /><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;BODY><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;……&lt;br><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;P <b>STYLE="color:black;margin-left:30px;font-weight:bolder;"</b>>内嵌样式应用于&lt;P>标记。&lt;/p><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;……&lt;br><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;DIV <b>STYLE="background-color:RED;text-indent:2em;width:100px;float:left;color:#fff;"</b>>内嵌样式应用于&lt;DIV标记>。&lt;/DIV><br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;……<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/BODY><br />
+                      &lt;/HTML><br /><br />
+                      <b>效果图如：</b><br />
+                      <div align="center"><img src="inlineCss.png" /></div>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>常用的CSS属性及取值</h1>
+                  <p>
+                    <div>
+                      <table border=1 cellspacing=0 width=100%>
+                        <tr>
+                          <th>常用属性</th>
+                          <th>属性取值</th>
+                          <th>作用说明</th>
+                        </tr>
+                        <tr>
+                          <td>color</td>
+                          <td>#rrggbb<br>colorname<br>rgb(r,g,b)</td>
+                          <td>设置文本的颜色</td>
+                        </tr>
+                        <tr>
+                          <td>background-color</td>
+                          <td>#rrggbb<br>colorname<br>rgb(r,g,b)</td>
+                          <td>为元素设置背景色</td>
+                        </tr>
+                        <tr>
+                          <td>background-image</td>
+                          <td>url("图片位置")</td>
+                          <td>为元素设置背图片</td>
+                        </tr>
+                        <tr>
+                          <td>line-height</td>
+                          <td>px;<br>%;<br>数值</td>
+                          <td>设置行间距</td>
+                        </tr>
+                        <tr>
+                          <td>text-indent</td>
+                          <td>px;<br>%;<br>em;<br>...</td>
+                          <td>文本缩进</td>
+                        </tr>
+                        <tr>
+                          <td>text-align</td>
+                          <td>left<br>right<br>center</td>
+                          <td>文本对齐</td>
+                        </tr>
+                        <tr>
+                          <td>text-decoration</td>
+                          <td>none<br>underline<br>overline<br>line-through<br>blink</td>
+                          <td>为文本添加修饰（无即取消、下划线、上划线、删除线或者让文本闪烁</td>
+                        </tr>
+                        <tr>
+                          <td>font-family</td>
+                          <td>字体名称;</td>
+                          <td>定义文本的字体系列</td>
+                        </tr>
+                        <tr>
+                          <td>font-style</td>
+                          <td>normal<br>italic<br>oblique</td>
+                          <td>将文本设置为正常显示、斜体显示、倾斜显示</td>
+                        </tr>
+                        <tr>
+                          <td>font-weight</td>
+                          <td>100~900、Bold、Bolder</td>
+                          <td>文本加粗（400等价于normal）</td>
+                        </tr>
+                        <tr>
+                          <td>font-size</td>
+                          <td>如：60px;</td>
+                          <td>设置文本的大小</td>
+                        </tr>
+                        <tr>
+                          <td>链接a伪类</td>
+                          <td>a:link - 普通的、未被访问的链接<br/>a:visited - 用户已访问的链接<br/>a:hover - 鼠标指针位于链接的上方<br/>a:active - 链接被点击的时刻</td>
+                          <td>a:hover 必须位于 a:link 和 a:visited 之后<br/>a:active 必须位于 a:hover 之后</td>
+                        </tr>
+                        <tr>
+                          <td>padding-top<br/>padding-right<br/>padding-bottom<br/>padding-left</td>
+                          <td>px<br>em<br>%<br>……</td>
+                          <td>设置元素的上内边距<br/>设置元素的右内边距<br/>设置元素的底内边距<br/>设置元素的左内边距</td>
+                        </tr>
+                        <tr>
+                          <td>margin-top<br/>margin-right<br/>margin-bottom<br/>margin-left</td>
+                          <td>px<br>em<br>%<br>……</td>
+                          <td>设置元素的上外边距<br/>设置元素的右外边距<br/>设置元素的底外边距<br/>设置元素的左外边距</td>
+                        </tr>
+                        <tr>
+                          <td>border-collapse</td>
+                          <td>separate（边框分开）<br>collapse（合并边框）<br>inherit（继承父元素的border-collapse属性的值）</td>
+                          <td>为表格设置合并边框模型（是否合并）</td>
+                        </tr>        
+                      </table>
+                      
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>历届高考样题/真题</h1>
+                  <p>
+                    <form>
+                      <input type="button" onclick="readText(ljGkQts,'5-9')" value="显示题目">
+                      <div id="tt9">
+                        
+                      </div>
+                    </form>
+                  </p>
+                </div>
+                
+              </div>
+            </p>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div data-role="footer" data-theme="b" data-position="fixed">
+        <h4>版权所有 <img src="Tianjin.png" width=28px height=28px align="middle" /> &copy;素年子山</h4>
+      </div>
+    </div>
+  </body>
+</html>

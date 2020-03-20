@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>项目一 初探计算机网络</title>
+    <link rel="stylesheet" href="./jquery/jquery.mobile-1.0.min.css" />
+    <script type="text/javascript" src="./jquery/jquery-1.6.4.min.js">
+    </script>
+    <script type="text/javascript" src="./jquery/jquery.mobile-1.0.min.js">
+    </script>
+    <style type="text/css">
+      form{
+        font-family:"宋体";
+        font-size:18px;
+        line-height:26px;
+      }
+    </style>
+    <script type="text/javascript" src="js/new-ljgkytzt.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/ljgkt.js" charset="utf-8"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  </head>
+  
+  <body>
+    <div data-role="page" id="home">
+      <div data-role="header" data-theme="b">
+        <h1>项目一 初探计算机网络</h1>
+      </div>
+      
+      <div data-role="content">
+        <div data-role="collapsible-set">
+          <div data-role="collapsible">
+            <h1>任务1 认识网络</h1>
+            <p>
+              <div data-role="collapsible-set">
+                <div data-role="collapsible">
+                  <h1>计算机网络的发展</h1>
+                  <p>
+                  <div>
+                    <dl>
+                      <ul>
+                        <p><dt><b><li>面向终端的计算机网络</li></b>
+                        <dd>一台主机<br>传输信息<br>SABREI<br>                
+                        <p><dt><b><li>计算机通信网络</li></b>
+                        <dd>四个交换结点<br>传输信息<br>ARPANET
+                        <p><dt><b><li>计算机网络</li></b>
+                        <dd>传输控制协议和网际协议<br>资源共享<br>INTERNET
+                      </ul>
+                    </dl>
+                  </div>
+                  </p>
+                </div>
+          
+                <div data-role="collapsible">
+                  <h1>计算机网络</h1>
+                  <p style="text-indent:2em;">将分散在不同地点的具有独立功能的计算机系统，用通信线路和通信设备连接起来，再配以相应的网络软件，实现数据传输的资源共享的计算机集合。
+                </div>
+            
+                <div data-role="collapsible">
+                  <h1>网络建设的目的</h1>
+                  <p>
+                    <ol>
+                      <li>提供资源的共享</li>
+                      <li>提供信息的快捷交流</li>
+                      <li>提供分布式处理</li>
+                      <li>实现集中控制和管理</li>
+                      <li>提高系统可靠性</li>
+                      <li>提高系统性价比</li>
+                    </ol>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>网络的应用</h1>
+                  <p>
+                    <ol>
+                      <li>电子邮件（E－MAIL）</li>
+                      <li>远程登录（Telnet）</li>
+                      <li>文件传输（FTP）</li>
+                      <li>网络新闻组（USENET）</li>
+                      <li>万维网（WWW）</li>
+                      <li>电子公告栏（BBS）</li>
+                      <li>虚拟现实（VR）</li>
+                      <li>IP电话（IP PHONE）</li>
+                      <li>IRC和ICQ</li>
+                      <li>电子商务（EB）</li>
+                      <li>网络娱乐</li>
+                    </ol>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>历届高考样题/真题</h1>
+                  <p>
+                    <form>
+                      <input type="button" onclick="readText(ljGkQts,'1-1')" value="显示题目">
+                      <div id="tt1">
+                        
+                      </div>
+                    </form>
+                  </p>
+                </div>
+              </p>
+            </div>
+          </div>
+            
+          <div data-role="collapsible">
+            <h1>任务2 了解网络的分类</h1>
+            <p>
+              <div data-role="collapsible-set">
+                <div data-role="collapsible">
+                  <h1>计算机网络的组成</h1>
+                  <p>为了降低组网的复杂程序，减少工作量和方便异种机的连接，将“数据处理”和“数据传输”分开，即将网络划分为“资源子网”和“通信子网”两部分。
+                    <div>
+                      <dl>
+                        <ul>
+                          <p><dt><b><li>资源子网</li></b>
+                          <dd>由入网的所有计算机、外设、软件和数据组成，负责全网的面向用户的数据处理与数据管理，以实现最大程度的全网资源共享。
+                          <p><dt><b><li>通信子网</li></b>
+                          <dd>由传输线路和转接部件组成，主要提供“用户入网的接口”和实现“数据传送”。
+                        </ul>
+                      </dl>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>计算机网络的分类</h1>
+                  <p>
+                    <div>
+                      <dl>
+                        <ul>
+                          <p><dt><b><li>按覆盖范围分类</li></b>
+                          <dd>
+                            <ol>
+                              <li>局域网（LAN）：覆盖范围10km以内；</li>
+                              <li>城域网（MAN）：覆盖范围100km以内；</li>
+                              <li>广域网（WAN）：覆盖范围在数千米。</li>
+                              目前城域网和局域网的区别起来越小。
+                            </ol>
+                          <p><dt><b><li>按网络拓扑结构分类</li></b>
+                          <dd>
+                            <ol>
+                              <li>星型网</li>
+                              <li>环型网</li>
+                              <li>总线型网</li>
+                              <li>树型网</li>
+                              <li>网状网</li>
+                            </ol>
+                          <p><dt><b><li>按传输带宽分类</li></b>
+                          <dd>
+                            <ol>
+                              <li>基带网</li>
+                              <li>宽带网</li>
+                            </ol>
+                          <p><dt><b><li>按网络结构分类</li></b>
+                          <dd>
+                            <ol>
+                              <li>以太网</li>
+                              <li>令牌环网</li>
+                            </ol>
+                          <p><dt><b><li>按信息传输介质分类</li></b>
+                          <dd>
+                            <ol>
+                              <li>无线网</li>
+                              <li>有线网</li>
+                              <li>光纤网</li>
+                            </ol>
+                          <p><dt><b><li>按使用的传输技术分类</li></b>
+                          <dd>
+                            <ol>
+                              <li>点对点式网</li>
+                              <li>广播式网</li>
+                            </ol>
+                          <p><dt><b><li>按交换方式分类</li></b>
+                          <dd>
+                            <ol>
+                              <li>电路交换网</li>
+                              <li>报文交换网</li>
+                              <li>分组交换网</li>
+                            </ol>
+                          <p><dt><b><li>按工作模式分类</li></b>
+                          <dd>
+                            <ol>
+                              <li>对等网</li>
+                              <li>客户机/服务器网络（C/S模式）</li>
+                            </ol>
+                        </ul>
+                      </dl>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>计算机网络的拓扑结构的分类及特点</h1>
+                  <p>
+                    <div>
+                      <dl>
+                        <ul>
+                          <p><dt><b><li>总线型结构</li></b>
+                          <dd><li><b>优点：</b>结构简单、布线容易、可靠性高，易于扩充，结点的故障不会殃及系统，是局域网常用的拓扑结构
+                              </p></li><li><p><b>缺点：</b>所有的数据都需要经过总线传送，总线成为整个网络的瓶颈；出现故障后诊断较为困难。另外，由于信道共享，连接的结点不宜过多，总线自身的故障可以导致系统的崩溃
+                              </p></li><li><p><b>典型例子：</b>以太网（Ethernet）<br />
+                              <div><img src="tp-zx.png" width="61.8%" /></div>
+                            </p></li>
+                          <p><dt><b><li>星型结构</li></b>
+                          <dd><li><p><b>优点：</b>结构简单、容易实现、易于管理，现在通常以交换机（Switch）作为中心结点，便于维护和管理
+                              </p></li><li><p><b>缺点：</b>中心结点是全网络的瓶颈，中心结点出现故障会导致网络的瘫痪
+                              </p></li><li><p><b>典型例子：</b>交换式以太网<br />
+                              <div><img src="tp-xx.png" width="61.8%" /></div>
+                            </p></li>
+                          <p><dt><b><li>环型结构</li></b>
+                          <dd><li><p><b>优点：</b>结构简单，适合使用光纤，传输距离远，传输延时确定
+                              </p></li><li><p><b>缺点：</b>环状网中的每个结点均成为网络可靠性的瓶颈，任意结点出现故障都会造成网络瘫痪，另外故障诊断也较困难
+                              </p></li><li><p><b>典型例子：</b>令牌环网（Token Ring）<br />
+                              <div><img src="tp-hx.png" width="61.8%" /></div>
+                            </p></li>
+                          <p><dt><b><li>树型结构</li></b>
+                          <dd><li><p><b>优点：</b>结构简单，维护方便，适用于汇集信息的应用要求
+                              </p></li><li><p><b>缺点：</b>资源共享能力较低，可靠性不高，任何一个工作站或链路的故障都会影响整个网络的运行<br />
+                              <div><img src="tp-sx.png" width="61.8%" /></div>
+                            </p></li>
+                          <p><dt><b><li>网状型结构</li></b>
+                          <dd><li><p><b>优点：</b>系统可靠性高，比较容易扩展
+                              </p></li><li><p><b>缺点：</b>结构复杂，每一结点都与多点进行连接，因此必须采用路由算法和流量控制方法
+                              </p></li><li><p><b>典型例子：</b>广域网（WAN）<br />
+                              <div><img src="tp-wz.png" width="61.8%" /></div>
+                            </p></li>
+                        </ul>
+                      </dl>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>历届高考样题/真题</h1>
+                  <p>
+                    <form>
+                      <input type="button" onclick="readText(ljGkQts,'1-2')" value="显示题目">
+                      <div id="tt2">
+                        
+                      </div>
+                    </form>
+                  </p>
+                </div>
+                
+              </div>
+            </p>
+          </div>
+          
+          <div data-role="collapsible">
+            <h1>任务3 解读网络体系结构</h1>
+            <p>
+              <div data-role="collapsible-set">
+                <div data-role="collapsible">
+                  <h1>OSI参考模型划分层次的原则</h1>
+                  <p>国际标准化组织（ISO）于1981年制定了开放系统互连参考模型（Open System Interconnection Reference Model，OSI/RM）。OSI参考模型基本构造技术是分层。
+                    <div>
+                      <ol>
+                        <li>根据功能需要进行分层，每层应当实现定义明确的功能；</li>
+                        <li>每一层功能的选择应当有助于制定国际标准化协议；</li>
+                        <li>网络中各结点具有相同的层次；</li>
+                        <li>不同结点的同等层具有相同的功能；</li>
+                        <li>层次功能的定义和接口划分应使得各层彼此独立，从而在接口保持不变的条件下，某一层的改变不会影响其他层；</li>
+                        <li>同一结点内相邻之间通过接口进行通信；</li>
+                        <li>每一层使用下层提供的服务，并向上层提供服务；</li>
+                        <li>不同结点的同等层按照协议实现对等层之间的通信；</li>
+                        <li>层次的数量应当适当，一般网络系统都是6~7层。</li>
+                      </ol>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>OSI参考模型</h1>
+                  <p>
+                    <div>
+                      <dl>
+                        <ul>
+                          <p><dt><b><li>物理层（Physical Layer）</li></b>
+                          <dd><b>功能：</b>它规定通信设备的机械、电气、功能和规范的特性，用以建立、维护和拆除物理连接 <br><b>数据：</b>比特流（bit）<br><b>协议：</b>EIA/TIA RS232、EIA/TIA RS449、V.35、RJ45等<br><b>设备：</b>中继器、集线器（HUB）、Modem
+                          <p><dt><b><li>数据链路层（Data Link Layer）</li></b>
+                          <dd><b>功能：</b>物理地址寻址、数据的组帧、流量控制、数据检错、重发<br><b>数据：</b>数据帧（Frame）<br><b>协议：</b>SDLC、HDLC、PPP、STP、帧中继等<br><b>设备：</b>网卡、交换机（Switch）、网桥
+                          <p><dt><b><li>网络层（Network Layer）</li></b>
+                          <dd><b>功能：</b>路由选择、拥塞控制和网际互连<br><b>数据：</b>数据包（packet）——分组<br><b>协议：</b>IP、ICMP、GMP、IPX、RIP、OSPF、ARP、RARP等<br><b>设备：</b>路由器（Router）、三层交换机
+                          <p><dt><b><li>传输层（Transport Layer）</li></b>
+                          <dd><b>功能：</b>为上层提供端到端（最终用户到最终用户）的透明的、可靠的数据传输服务。即分割与重组数据、按端口号寻址、连接管理、差错控制和流量控制<br><b>数据：</b>数据包（packet）——分段<br><b>协议：</b>TCP、UDP、SPX等
+                          <p><dt><b><li>会话层（Session Layer）</li></b>
+                          <dd><b>功能：</b>会话连接的管理、对话管理、同步管理、活动管理<br><b>数据：</b>报文——活动（activity）逻辑单元
+                          <p><dt><b><li>表示层（Presentation Layer）</li></b>
+                          <dd><b>功能：</b>传送语法协商、语法转换、服务映射、其它功能——表示层管理、数据的压缩和解压缩、数据的加密和解密等<br><b>数据：</b>报文
+                          <p><dt><b><li>应用层（Application Layer）</li></b>
+                          <dd><b>功能：</b>最接近用户的一层，主要功能是为用户的应用程序提供网络服务，是用户使用网络功能的接口<br><b>数据：</b>报文<br><b>协议：</b>Telnet、FTP、HTTP、SNMP、SMTP、POP3、IMAP、TFTP、NFS、DHCP等
+                        </ul>
+                      </dl>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>TCP/IP参考模型</h1>
+                  <p>
+                    <div>
+                      <dl>
+                        <ul>
+                          <p><dt><b><li>网络接口层</li></b>
+                          <dd>网络接口层是TCP/IP模型的最底层，它负责接收由IP来的数据报，并把这些数据报送到指定的网络上。这一层直接面向不同的通信子网。
+                          <p><dt><b><li>网际层</li></b>
+                          <dd>本层把TCP交来的报文分组封装成IP数据报，加上报头，使用路由算法，确定是把此数据报直接送交到主机还是发给下一个网关，把数据报交给网络接口层发送出去。
+                          <p><dt><b><li>传输层</li></b>
+                          <dd>传输层的根本任务是提供可靠的端到端通信。该层保证传输可靠、不乱序、进行流量控制。为此，接收就具有确认和请求重发功能。传输层把数据分成报文组，传给下一层。
+                          <p><dt><b><li>应用层</li></b>
+                          <dd>应用层是最高层，提供若干应用程序供用户调用。应用程序利用传输层服务，发送或接收数据。数据的形式可以是一串报文，也可看成是一种字节流。
+                        </ul>
+                      </dl>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>TCP/IP参考模型与OSI参考模型的对应关系</h1>
+                  <p>
+                    <div>
+                      <table width="100%" cellspacing="0" border="1">
+                        <tr><td rowspan="3">应用层</td><td>应用层</td></tr>
+                        <tr><td>表示层</td></tr>
+                        <tr><td>会话层</td></tr>
+                        <tr><td>传输层</td><td>传输层</td></tr>
+                        <tr><td>网际层</td><td>网络层</td></tr>
+                        <tr><td rowspan="2">网络接口层</td><td>数据链路层</td></tr>
+                        <tr><td>物理层</td></tr>
+                      </table>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>TCP/IP协议</h1>
+                  <p>
+                    <div>
+                      <dl>
+                        <ul>
+                          <p><dt><b><li>网际层协议</li></b>
+                          <dd>IP：网际协议<br />ICMP：因特网控制报文协议<br />IGMP：因特网组管理协议<br />ARP：地址解析协议<br />RARP：逆地址解析协议
+                          <p><dt><b><li>传输层协议</li></b>
+                          <dd>TCP：传输控制协议，是一种面向连接的、可靠的、基于IP的传输层协议<br />UDP：用户数据报协议，一种无连接的传输层协议，提供面向事务的简单不可靠信息的传送服务
+                          <p><dt><b><li>应用层协议</li></b>
+                          <dd>RPC：远程过程调用协议<br />TFTP：简单文件传输协议<br />SNMP：简单网络管理协议<br />Telnet：远程登陆服务协议<br />FTP：文件传输协议<br />SMTP：简单邮件传输协议<br />POP3：邮局协议第三版<br />DHCP：动态主机配置协议<br />DNS：域名服务
+                        </ul>
+                      </dl>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>常见的网络标准化组织</h1>
+                  <p>
+                    <div>
+                      <ol>
+                        <li><b>ANSI：</b>美国国家标准协会/li>
+                        <li><b>EIA：</b>电子工业联盟</li>
+                        <li><b>IEEE：</b>电气与电子工程师学会</li>
+                        <li><b>ISO：</b>国际标准化组织</li>
+                        <li><b>ITU：</b>国际电信联盟</li>
+                      </ol>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>历届高考样题/真题</h1>
+                  <p>
+                    <form>
+                      <input type="button" onclick="readText(ljGkQts,'1-3')" value="显示题目">
+                      <div id="tt3">
+                        
+                      </div>
+                    </form>
+                  </p>
+                </div>
+                
+              </div>
+            </p>
+          </div>          
+          
+          <div data-role="collapsible">
+            <h1>任务4 熟识IP地址</h1>
+            <p>
+              <div data-role="collapsible-set">
+                <div data-role="collapsible">
+                  <h1>IP地址的定义</h1>
+                  <p>
+                    <div>
+                      <dl>
+                        <ul>
+                          <p><dt><b><li>IP地址</li></b>
+                          <dd>为了标记Internet上的每一台计算机的位置，人们为每台计算机或网络设备都分配一个唯一识别的地址，该地址称为IP（Internet Protocol）地址，也称网际地址。
+                          <p><dt><b><li>IP地址的格式</li></b>
+                          <dd>IP地址由32位二进制数表示，由点号分隔成4组，每组8位，即它由4个字节组成。化为十进制即为“点分十进制”表示，每组取值范围为0~255。
+                        </ul>
+                      </dl>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>IP地址的结构</h1>
+                  <p>
+                    <div>
+                      <table border="1" width="100%" cellspacing="0">
+                        <tr align="center"><th>IP地址</th><th style="background-color:#999;color:white;">网络号</th><th>主机号</th></tr>
+                        <tr align="center"><td>子网掩码</td><td style="background-color:#999;color:white;">11……1</td><td>00……0</td></tr>
+                        <tr align="center"><td>位名称</td><td style="background-color:#999;color:white;">网络位</td><td>主机位</td></tr>
+                        <tr align="center"><td>位特点</td><td style="background-color:#999;color:white;">全部为1</td><td>全部为0</td></tr>
+                        <tr align="center"><td>位作用</td><td style="background-color:#999;color:white;">决定主机所在网络</td><td>主机所在网络中位置</td></tr>
+                      </table>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>IP地址的分类</h1>
+                  <p>
+                    <div>
+                      <dl>
+                        <ul>
+                          <p><dt><b><li>A类地址</li></b>
+                          <dd><b>用&nbsp;&nbsp;途：</b>用于大型网络<br/><b>位特点：</b>0开头<br/><b>数特点：</b>1~126<br/><b>网络位：</b>7位<br/><b>网络数：</b>2<sup>7</sup>-2=126个<br/><b>主机位：</b>24位<br/><b>主机数：</b>2<sup>24</sup>-2=16777214台
+                          <p><dt><b><li>B类地址</li></b>
+                          <dd><b>用&nbsp;&nbsp;途：</b>用于中型网络<br/><b>位特点：</b>10开头<br/><b>数特点：</b>128~191<br/><b>网络位：</b>14位<br/><b>网络数：</b>2<sup>14</sup>=16384个<br/><b>主机位：</b>16位<br/><b>主机数：</b>2<sup>16</sup>-2=65534台
+                          <p><dt><b><li>C类地址</li></b>
+                          <dd><b>用&nbsp;&nbsp;途：</b>用于小型网络<br/><b>位特点：</b>110开头<br/><b>数特点：</b>192~223<br/><b>网络位：</b>21位<br/><b>网络数：</b>2<sup>21</sup>=2097152个<br/><b>主机位：</b>8位<br/><b>主机数：</b>2<sup>8</sup>-2=254台
+                          <p><dt><b><li>D类地址</li></b>
+                          <dd><b>用&nbsp;&nbsp;途：</b>用于多播<br/><b>位特点：</b>1110开头<br/><b>数特点：</b>224~239（不能分配给主机）
+                          <p><dt><b><li>E类地址</li></b>
+                          <dd><b>用&nbsp;&nbsp;途：</b>用于实验目的的保留地址<br/><b>位特点：</b>1111开头<br/><b>数特点：</b>240~255（不能分配给主机）
+                        </ul>
+                      </dl>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>特殊的IP地址</h1>
+                  <p>
+                    <div>
+                      <dl>
+                        <ul>
+                          <p><dt><b><li>计算机启动时使用</li></b>
+                          <dd><b>网络号：</b>全0<br/><b>主机号：</b>全0<br/><b>地址类型：</b>本机地址<br/><b>举例说明：</b>0.0.0.0</p>
+                          <p><dt><b><li>标识一个网络</li></b>
+                          <dd><b>网络号：</b>任意<br/><b>主机号：</b>全0<br/><b>地址类型：</b>网络号（即网络地址）<br/><b>举例说明：</b>121.0.0.0</p>
+                          <p><dt><b><li>在特定的网上广播</li></b>
+                          <dd><b>网络号：</b>任意<br/><b>主机号：</b>全1<br/><b>地址类型：</b>直接广播地址<br/><b>举例说明：</b>190.122.255.255</p>
+                          <p><dt><b><li>在本网段上广播</li></b>
+                          <dd><b>网络号：</b>全1<br/><b>主机号：</b>全1<br/><b>地址类型：</b>限制广播地址<br/><b>举例说明：</b>255.255.255.255</p>
+                          <p><dt><b><li>测试地址（回环或称回送地址）</li></b>
+                          <dd><b>网络号：</b>第一段为127<br/><b>主机号：</b>任意<br/><b>地址类型：</b>回送地址<br/><b>举例说明：</b>127.0.56.233</p>
+                          <p><dt><b><li>A类保留的私有地址</li></b>
+                          <dd><b>网络号：</b>第一字节为10<br/><b>地址范围：</b>10.0.0.0~10.255.255.255</p>
+                          <p><dt><b><li>B类保留的私有地址</li></b>
+                          <dd><b>网络号：</b>第一字节为172，第二字节为：16~31<br/><b>地址范围：</b>172.16.0.0~172.31.255.255</p>
+                          <p><dt><b><li>C类保留的私有地址</li></b>
+                          <dd><b>网络号：</b>前两个字节为：192.168<br/><b>地址范围：</b>192.168.0.0~192.168.255.255</p>
+                          <p><dt><b><li>DHCP服务器无响应时，系统自动分配的保留地址</li></b>
+                          <dd><b>网络号：</b>前两个字节为169.254<br/><b>地址范围：</b>169.254.X.X</p>
+                        </ul>
+                      </dl>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>网络协议</h1>
+                  <p>网络协议是用来描述进程之间信息交换时的规则。
+                    <div>
+                      <dl>
+                        <ul>
+                          <p><dt><b><li>语义</li></b>
+                          <dd>语义是解释控制信息的每个部分的意义。它规定了需要发出何种控制信息，以及完成的动作与做出什么样的响应。
+                          <p><dt><b><li>语法</li></b>
+                          <dd>语法是用户数据与控制信息的结构与格式，以及数据出现的顺序。
+                          <p><dt><b><li>时序</li></b>
+                          <dd>时序是对事件发生顺序的详细说明（也称“同步”）。
+                        </ul>
+                      </dl>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>IPv6</h1>
+                  <p>
+                    <div>
+                      <dl style="text-indent:2em;">
+                        <b>IPv6</b>是“Internet Protocol version 6”的缩写，是下一代的IP协议，它由128位二进制数码表示。
+                      </dl>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>历届高考样题/真题</h1>
+                  <p>
+                    <form>
+                      <input type="button" onclick="readText(ljGkQts,'1-4')" value="显示题目">
+                      <div id="tt4">
+                        
+                      </div>
+                    </form>
+                  </p>
+                </div>
+                
+              </div>
+            </p>
+          </div>          
+          
+          <div data-role="collapsible">
+            <h1>任务5 展望网络发展前景</h1>
+            <p>
+              <div data-role="collapsible-set">
+                <div data-role="collapsible">
+                  <h1>发展前景</h1>
+                  <p>
+                    <div style="text-indent:2em;">
+                      计算机网络发展的基本方向是开放、集成、高速、移动、以及分布式多媒体应用。
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>典型应用</h1>
+                  <p>
+                    <div style="text-indent:2em;">
+                      Wi-Fi、3G和4G、蓝牙、云服务、物联网、智能网
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>其他应用</h1>
+                  <p>
+                    <div style="text-indent:2em;">
+                      无缝漫游、无线传感器网络、网格
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>历届高考样题/真题</h1>
+                  <p>
+                    <form>
+                      <input type="button" onclick="readText(ljGkQts,'1-5')" value="显示题目">
+                      <div id="tt5">
+                        
+                      </div>
+                    </form>
+                  </p>
+                </div>
+                
+              </div>
+            </p>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div data-role="footer" data-theme="b" data-position="fixed">
+        <h4>版权所有 <img src="Tianjin.png" width=28px height=28px align="middle" /> &copy;素年子山</h4>
+      </div>
+    </div>
+  </body>
+</html>

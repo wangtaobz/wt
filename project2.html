@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>项目二 走进局域网</title>
+    <link rel="stylesheet" href="./jquery/jquery.mobile-1.0.min.css" />
+    <script type="text/javascript" src="./jquery/jquery-1.6.4.min.js">
+    </script>
+    <script type="text/javascript" src="./jquery/jquery.mobile-1.0.min.js">
+    </script>
+    <style type="text/css">
+      form{
+        font-family:"宋体";
+        font-size:18px;
+        line-height:26px;
+      }
+    </style>
+    <script type="text/javascript" src="js/new-ljgkytzt.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/ljgkt.js" charset="utf-8"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  </head>
+  
+  <body>
+    <div data-role="page" id="home">
+      <div data-role="header" data-theme="b">
+        <h1>项目二 走进局域网</h1>
+      </div>
+      
+      <div data-role="content">
+        <div data-role="collapsible-set">
+          <div data-role="collapsible">
+            <h1>任务1 认识局域网</h1>
+            <p>
+              <div data-role="collapsible-set">
+                <div data-role="collapsible">
+                  <h1>局域网的特点</h1>
+                  <p>
+                  <div>
+                    <table border="1" cellspacing="0" width="100%">
+                      <tr style="background-color:#0099ff;color:white;"><th>相比项</th><th>特点</th></tr>
+                      <tr><td>地理分布</td><td>地理分布范围小，一般为数百米至数千米</td></tr>
+                      <tr><td>传输速率</td><td>传输速率高，一般为1~100Mbps</td></tr>
+                      <tr><td>误码率</td><td>误码率低，一般在10<sup>-11</sup>~10<sup>-8</sup>以下</td></tr>
+                      <tr><td>使用主体</td><td>以个人计算机为主体，包括终端及各种外设，网络中一般不设中央主机系统</td></tr>
+                      <tr><td>与OSI关系</td><td>一般包含OSI/RM参考模型中的低三层功能</td></tr>
+                      <tr><td>拓扑结构</td><td>局域网大多采用总线型、星型及环型，也包括树型结构</td></tr>
+                      <tr><td>归属</td><td>归一个单一组织所拥有和使用，不受公共网络管理规定的约束</td></tr>
+                    </table>
+                  </div>
+                  </p>
+                </div>
+      
+                <div data-role="collapsible">
+                  <h1>局域网的组成（硬件）</h1>
+                  <p>
+                    <ol>
+                      <li><b>网络适配器：</b>NIC－网卡</li>
+                      <li><b>网络服务器</b>
+                        <ul>
+                          <li>文件打印服务器</li>
+                          <li>数据库服务器</li>
+                          <li>应用服务器
+                            <ul>
+                              <li>WWW服务器</li>
+                              <li>FTP服务器</li>
+                              <li>电子邮件服务器</li>
+                            </ul>
+                          </li>                          
+                        </ul>
+                      </li>
+                      <li><b>工作站</b>
+                        <ul>
+                          <li>有盘工作站</li>
+                          <li>无盘工作站</li>
+                        </ul>
+                      </li>                        
+                      <li><b>传输媒体</b></li>
+                    </ol>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>局域网的组成（软件）</h1>
+                  <p>
+                    <ol>
+                      <li><b>网络系统软件</b>
+                        <ul>
+                          <li>UNIX</li>
+                          <li>Linux</li>
+                          <li>NetWare</li>
+                          <li>Windows Server</li>
+                          <li>......</li>
+                        </ul>
+                      </li>
+                      <li><b>网络应用软件</b>
+                        <ul>
+                          <li>QQ</li>
+                          <li>Foxmail</li>
+                          <li>迅雷</li>
+                          <li>浏览器</li>
+                          <li>......</li>
+                        </ul>
+                      </li>
+                    </ol>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>IEEE802与OSI/RM</h1>
+                  <p>
+                    <div>
+                      <img width="100%" height="100%" src="IEEE802&OSI.png" />
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>IEEE802LAN物理层</h1>
+                  <p><b>物理层规范：</b>
+                    <ol>
+                      <li>采用基带信号传输</li>
+                      <li>数据的编码采用曼彻斯特编码</li>
+                      <li>传输介质是双绞线、同轴电缆和光缆等</li>
+                      <li>拓扑结构可以是总线型、树型、星型和环型</li>
+                      <li>传输速率有10Mbps、16Mbps、100Mbps、1000Mbps</li>
+                    </ol>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>IEEE802LAN的数据链路层</h1>
+                  <p>
+                    <ol>
+                      <li><b>MAC子层的功能</b>
+                        <ul>
+                          <li>MAC子层与传输介质有关
+                            <ul>
+                              <li>CSMA/CD</li>
+                              <li>Token Ring</li>
+                              <li>Token Bus</li>
+                            </ul>
+                          </li>
+                          <li>MAC地址－48b
+                            <ul>
+                              <li>前24b——由IEEE统一分配给厂商即：OUI</li>
+                              <li>后24b——由厂商分配给每一块网卡</li>
+                            </ul>
+                          </li>                          
+                        </ul>
+                      </li>
+                      <li><b>LCC子层的功能</b>
+                        <ul>
+                          <li>LLC在MAC子层的支持下向网络层提供服务，与传输介质无关。主要功能包括：将数据组成帧，并对数据帧进行顺序控制、差错控制和流量控制，使不可靠的物理链路变为可靠的链路</li>
+                        </ul>
+                      </li>
+                    </ol>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>局域网技术要素</h1>
+                  <p style="text-indent:2em">局域网<b>主要解决</b>ISO网络模型中<b>最低两层</b>物理层、数据链路层的功能，决定局域网的组成方式、信道容量、通信速度、信息传输方式和效率等技术因素，主要有：
+                    <ol><b>
+                      <li>网络拓扑结构</li>
+                      <li>传输介质</li>
+                      <li>介质访问控制方法</li></b>
+                    </ol>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>IEEE802标准系列</h1>
+                  <p>
+                    <div>
+                      <img width="100%" height="100%" src="IEEE802.png" />
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>局域网的网络结构</h1>
+                  <p>相当于网络的按工作模式分类
+                    <ol><b>
+                      <li>对等式结构</li>
+                      <li>客户机/服务器网络（C/S模式）</li></b>
+                    </ol>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>以太网的分类</h1>
+                  <p>
+                    <ol>
+                      <li>标准以太网（10Mbps）<br />
+                        <div>
+                          <img width="100%" height="100%" src="IEEE802.3.png" />
+                        </div>
+                      </li>
+                      <li>快速以太网（100Mbps）</li>
+                      <li>千兆以太网（1000Mbps）</li>
+                      <li>万兆以太网（10000Mbps）</li>
+                    </ol>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>历届高考样题/真题</h1>
+                  <p>
+                    <form>
+                      <input type="button" onclick="readText(ljGkQts,'2-1')" value="显示题目">
+                      <div id="tt1">
+                        
+                      </div>
+                    </form>
+                  </p>
+                </div>
+              </p>
+            </div>
+          </div>
+            
+          <div data-role="collapsible">
+            <h1>任务2 准备传输介质</h1>
+            <p>
+              <div data-role="collapsible-set">
+                <div data-role="collapsible">
+                  <h1>传输介质的分类</h1>
+                  <p>
+                    <div>
+                      <ol>
+                        <li><b>有线</b>
+                          <ul>
+                            <li>双绞线
+                              <ul>
+                                <li>UTP</li>
+                                <li>STP</li>
+                              </ul>
+                            </li>
+                            <li>同轴电缆
+                              <ul>
+                                <li>粗缆</li>
+                                <li>细缆</li>
+                              </ul>
+                            </li>
+                            <li>光纤
+                              <ul>
+                                <li>单模</li>
+                                <li>多模</li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li><b>无线</b>
+                          <ul>
+                            <li>无线电波</li>
+                            <li>红外线</li>
+                            <li>微波</li>
+                            <li>蓝牙</li>
+                            <li>激光</li>
+                            <li>......</li>
+                          </ul>
+                        </li>
+                      </ol>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>双绞线制作</h1>
+                  <p>
+                    <div>
+                      <img width="100%" height="100%" src="STP_UTP.png" />
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>数据通信的相关概念</h1>
+                  <p>
+                    <div>
+                      <dl>
+                        <ul>
+                          <dt><b><li>数据传输速度</li></b>
+                          <dd><li>指信道每秒所传输的二进制比特数，单位：bps或bit/s
+                            </li>
+                          <dt><b><li>误码率</li></b>
+                          <dd><li>传输二进制数据位时出现错误的概率，计算公式P<sub>e</sub>=N<sub>e</sub>/N
+                            </li>
+                          <dt><b><li>信道带宽</li></b>
+                          <dd><li>是描述信道传输能力的技术指标，它的大小是由信道的物理特性决定的，单位：Hz(赫[兹])
+                            </li>
+                          <dt><b><li>信道容量</li></b>
+                          <dd><li>信道传输数据速率的上限，单位：bps或bit/s
+                            </li>
+                          <dt><b><li>信道的通信方式</li></b>
+                          <dd><ol>
+                              <li>单工通信</li>
+                              <li>半双工通信</li>
+                              <li>全双工通信</li>
+                            </ol>
+                          <dt><b><li>通信的传输方式</li></b>
+                          <dd><ol>
+                              <li>基带传输</li>
+                              <li>频带（宽带）传输</li>
+                            </ol>
+                        </ul>
+                      </dl>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>介质访问控制方法</h1>
+                  <p>
+                    <div>
+                      <dl>
+                        <ul>
+                          <dt><b><li>CSMA/CD（载波监听多路访问冲突检测）</li></b>
+                          <dd><li>先听后发，边听边发，冲突停发（尝试16次），随机重发——原理比较简单，争用型，易实现，平等地位 ，不提供优先级控制。被广泛应用于以太网（Ethernet）。
+                            </li>
+                          <dt><b><li>Token Ring（令牌环）</li></b>
+                          <dd><li>提供优先权服务，实时性，时延确定，效率较高，没有冲突。应用于令牌环网，常用于工业控制。
+                            </li>
+                          <dt><b><li>Token Bus（令牌总线）</优先权服务li></b>
+                          <dd><li>延迟时间确定，实时性强，优先权服务。应用于令牌总线网络，令牌总线访问控制是在物理总线上建立一个逻辑环。
+                            </li>
+                        </ul>
+                      </dl>
+                    </div>
+                  </p>
+                </div>      
+                
+                <div data-role="collapsible">
+                  <h1>历届高考样题/真题</h1>
+                  <p>
+                    <form>
+                      <input type="button" onclick="readText(ljGkQts,'2-2')" value="显示题目">
+                      <div id="tt2">
+                        
+                      </div>
+                    </form>
+                  </p>
+                </div>
+                
+              </div>
+            </p>
+          </div>
+          
+          <div data-role="collapsible">
+            <h1>任务3 熟悉网络硬件设备</h1>
+            <p>
+              <div data-role="collapsible-set">
+                
+                <div data-role="collapsible">
+                  <h1>网络互连设备</h1>
+                  <p>
+                    <div>
+                      <dl>
+                        <ul>
+                          <dt><b><li>网络适配器（NIC——网卡）</li></b>
+                          <dd><li><b>功能：</b>物理连接和电信号匹配，帧的发送与接收、帧的封装与拆封、介质访问控制、数据的编码与解码以及数据缓存</li>
+                            <li><b>分类：</b>按带宽分、按网络接口分（RJ-45接口，RJ-11接口，SC光纤接口，FDDI接口，AUI接口，BNC接口，Console接口）、按所支持的总线类型分</li>
+                            <li><b>OSI层次：</b>数据链路层</li>
+                          <dt><b><li>中继器（Repeater）</li></b>
+                          <dd><li><b>功能：</b></li>重新发送或者转发，来扩大网络传输的距离。再生和还原
+                            <li><b>OSI层次：</b>物理层</li>
+                          <dt><b><li>集线器（HUB）</li></b>
+                          <dd><li><b>功能：</b>对接收到的信号进行再生整形放大，以扩大网络的传输距离，同时把所有节点集中在以它为中心的节点上。显然它具有中继器的功能</li>
+                            <li><b>分类：</b>8、12、16、24口</li>
+                            <li><b>OSI层次：</b>物理层</li>
+                          <dt><b><li>交换机（Switch）</li></b>
+                          <dd><li><b>功能：</b><ol><li>地址学习功能（记录源MAC地址入“端口-MAC地址”映射表）；</li><li>转发/过滤功能；</li><li>消除回路功能</li></ol></li>
+                            <li><b>分类：</b>按常见形式分、按其应用的网络规模层次分、按交换机端口速率的不同分、按交换机所跨OSI层次分</li>
+                            <li><b>OSI层次：</b>数据链路层</li>
+                          <dt><b><li>路由器（Router），又称网关设备（Gateway）</li></b>
+                          <dd><li><b>功能：</b><ol><li>路由功能（寻径功能）——具有判断网络地址和选择IP路径的功能</li><li>交换功能</li><li>隔离广播 、指定访问规则</li><li>异种网络互连</li><li>子网间的速率匹配</li></ol></li>
+                            <li><b>分类：</b>根据其接入位置和重要性分</li>
+                            <li><b>OSI层次：</b>网络层</li>
+                        </ul>
+                      </dl>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>以太网的相关计算题</h1>
+                  <p>
+                    <div>
+                      <dl>
+                        <ul>
+                          <dt><b><li>集线器共享带宽的计算</li></b>
+                          <dd><li>工作在同一集线器的设备共享带宽，同一时刻最大吞吐量即是其端口的带宽</li>
+                          <dt><b><li>全双工的交换机端口容量</li></b>
+                          <dd><li>端口容量＝2*（n*100Mbps+m*1000Mbps）（n：表示交换机有n个100M端口，m：表示交换机有m个1000M端口）<br />例如:一台8*100M/1*1000M口的交换机端口容量为3.6G</li>
+                        </ul>
+                      </dl>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>交换机的基本配置</h1>
+                  <p>
+                    <div>
+                      <dl>
+                        <ul>
+                          <dt><b><li>带外管理</li></b>
+                          <dd><li>首次配置交换机</li><li>无法进行带内管理时</li>
+                          <dt><b><li>带内管理</li></b>
+                          <dd><li>通过Telnet程序登录到交换机</li><li>通过HTTP协议访问交换机</li><li>通过厂商配备的网管软件对交换机进行配置管理</li>
+                        </ul>
+                      </dl>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>数据帧的转发方式</h1>
+                  <p>
+                    <div>
+                      <dl>
+                        <dt><b>（1）直接交换方式</b>
+                        <dd>A.交换速度快，端口交换时间短<br>
+                        B.网络响应速率快，延迟时间小<br>
+                        C.可靠性差，不提供检错能力<br>
+                        D.没有速率匹配、流量控制功能<br>
+                        E.适用于小型交换机
+                        <dt><b>（2）存储转发方式</b>
+                        <dd>A.可靠传输<br>
+                        B.延迟时间大<br>
+                        C.支持不同速率的入/出口交换
+                        <dt><b>（3）改进的直接交换方式</b>
+                        <dd>这是介于前两者之间的一种解决方案。它检查数据包的长度是否够64个字节，如果小于64字节，说明是假包，则丢弃该包；如果大于64字节，则发送该包。这种方式也不提供数据校验。它的数据处理速度比存储转发方式快，但比直通式慢
+                      </dl>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>三层交换技术</h1>
+                  <p>具有路由功能的交换机，是路由器和二层交换机的有机集合体
+                    <div>
+                      <dl>
+                        <ul>
+                          <p><dt><b><li>原理与功能</li></b>
+                          <dd><ol><li>工作在OSI参考模型的第3层（网络层）</li><li>具有第三层路由功能，二层交换转发</li><li>把三层路由功能和二层交换功能相结合</li><li>提高路由器的分组转发速度，解决传统路由器的传输瓶颈问题</li></ol>
+                          <p><dt><b><li>应用</li></b>
+                          <dd><ol><li>主要用途是代替传统路由器作为网络的核心</li><li>作为骨干交换机</li><li>支持Trunk协议</li></ol>
+                          
+                        </ul>
+                      </dl>
+                    </div>
+                  </p>
+                </div>
+                                                
+                <div data-role="collapsible">
+                  <h1>历届高考样题/真题</h1>
+                  <p>
+                    <form>
+                      <input type="button" onclick="readText(ljGkQts,'2-3')" value="显示题目">
+                      <div id="tt3">
+                        
+                      </div>
+                    </form>
+                  </p>
+                </div>
+                
+              </div>
+            </p>
+          </div>          
+          
+          <div data-role="collapsible">
+            <h1>任务4 组建局域网</h1>
+            <p>
+              <div data-role="collapsible-set">
+                <div data-role="collapsible">
+                  <h1>Ipconfig命令</h1>
+                  <p>
+                    <div>
+                      <ol>
+                        <li>Ipconfig（不带参数）</li>                          
+                        <li>Ipconfig /all</li>
+                        <li>Ipconfig /renew</li>
+                        <li>Ipconfig /release</li>
+                        <li>Ipconfig /flushdns</li>
+                        <li>Ipconfig /displaydns</li>
+                      </ol>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>ping命令</h1>
+                  <p>
+                    <div>
+                      <ol>
+                        <li>回环测试</li>                          
+                        <li>Ping 本机IP地址</li>
+                        <li>Ping 局域网内其他主机IP地址</li>
+                        <li>Ping 网关</li>
+                        <li>Ping 域名服务器</li>
+                        <li>Ping 远程IP地址</li>
+                        <li>Ping 域名</li>
+                        <li>带参数“-t”的Ping命令</li>
+                        <li>带参数“-a”的Ping命令</li>
+                        <li>带参数“-n COUNT”的Ping命令——设置回送请求信息的次数</li>
+                        <li>带参数“-a SIZE”的Ping命令——改变ICMP报文中数据字段的长度</li>
+                      </ol>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>连接局域网</h1>
+                  <p>
+                    <div>
+                      <img src="lan_map.png" width="100%" />
+                      <ol><b>
+                        <li>硬件设备的连接</li>                          
+                        <li>配置计算机的IP地址</li>
+                        <li>验证两台计算机是否连通</li>
+                        <li>共享文件夹（资料）</li>
+                        <li>共享打印机（硬件）</b>
+                          <ul>
+                            <li>设置打印机共享</li>
+                            <li>安装共享打印机</li>
+                          </ul>
+                        </li>
+                        <li><b>Windos7中共享访问方法</b>
+                          <ol type="I">
+                            <li>打开“网络和共享中心”窗口——再单击三个连成一线的图标“计算机、网络、Internet”正中间“网络”那个图标即可</li>
+                            <li>在地址栏或运行中使用UNC（Universal Naming Convention——通用命名规则，也称通用命名规范、通用命名约定）路径访问，UNC路径格式如下：
+                              <ol type="i">
+                                <li>\\共享主机计算机名\共享文件夹名（文件夹名可省）</li>
+                                <li>\\共享主机IP地址\共享文件夹名（文件夹名可省）</li>
+                              </ol>
+                            </li>
+                          </ol>
+                        </li>
+                      </ol>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>其他网络检测命令</h1>
+                  <p>
+                    <div>
+                      <dl>
+                        <ul>
+                          <p><dt><b><li>tracert命令</li></b>
+                          <dd><ol><li>不带参数的tracert命令</li><li>tracert -d</li><li>tracert -h &lt;最大跃点数></li><li>tracert -w &lt;等待应答信息的时间></li></ol>
+                          <p><dt><b><li>netstat命令</li></b>
+                          <dd><ol><li>netstat -a</li><li>netstat  -n</li><li>netstat -s -p &lt;协议名称></li><li>netstat -r</li></ol>
+                          
+                        </ul>
+                      </dl>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>子网划分</h1>
+                  <p>
+                    <div>
+                      <img width="100%" height="100%" src="zwhf.png" />
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>虚拟局域网（VLAN）</h1>
+                  <p>
+                    <div>
+                      <dl>
+                        <ul>
+                          <p><dt><b><li>概念</li></b>
+                          <dd>虚拟局域网（VLAN）是一组逻辑上的设备和用户，这些设备和用户并不受物理位置的限制，可以根据功能、部门及应用等因素将它们组织起来，相互之间的通信就好像它们在同一个网段中一样，由此得名虚拟局域网。VLAN是一种比较新的技术，工作在OSI参考模型的第2层和第3层，一个VLAN就是一个广播域，VLAN之间的通信是通过第3层的路由器来完成的。与传统的局域网技术相比较，VLAN技术更加灵活，它具有以下优点： 网络设备的移动、添加和修改的管理开销减少；可以控制广播活动；可提高网络的安全性
+                          <p><dt><b><li>划分方法</li></b>
+                          <dd><ol><li>基于交换机端口的VLAN</li><li>基于MAC地址的VLAN</li><li>基于网络层地址的VLAN</li><li>基于IP组播的VLAN</li><li>基于策略的VLAN<ul><li>按MAC地址</li><li>按IP地址</li><li>按以太网协议类型</li><li>按网络的应用</li></ul></li></ol>
+                          <p><dt><b><li>优点</li></b>
+                          <dd><ol><li>简化网络管理</li><li>控制网络的广播风暴</li><li>确保网络的安全性</li></ol>
+                        </ul>
+                      </dl>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>无线局域网（WLAN）</h1>
+                  <p>
+                    <div>
+                      <dl>
+                        <ul>
+                          <p><dt><b><li>概念</li></b>
+                          <dd>无线局域网（Wireless Local Area Network,WLAN）是计算机网络与无线通信技术相结合的产物。无线网络是有线网络的扩充，适用于不便于架设线缆的网络环境
+                          <p><dt><b><li>设备</li></b>
+                          <dd><ol><li>无线网卡</li><li>无线网桥</li></ol>
+                          <p><dt><b><li>组建方式</li></b>
+                          <dd><ol><li>全无线网</li><li>无线结点接入有线网</li><li>两个有线网通过无线方式相连</li></ol>
+                        </ul>
+                      </dl>
+                    </div>
+                  </p>
+                </div>
+                
+                <div data-role="collapsible">
+                  <h1>历届高考样题/真题</h1>
+                  <p>
+                    <form>
+                      <input type="button" onclick="readText(ljGkQts,'2-4')" value="显示题目">
+                      <div id="tt4">
+                        
+                      </div>
+                    </form>
+                  </p>
+                </div>
+                
+              </div>
+            </p>
+          </div>          
+                        
+        </div>
+      </div>
+      
+      <div data-role="footer" data-theme="b" data-position="fixed">
+        <h4>版权所有 <img src="Tianjin.png" width=28px height=28px align="middle" /> &copy;素年子山</h4>
+      </div>
+    </div>
+  </body>
+</html>
